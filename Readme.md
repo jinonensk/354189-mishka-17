@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Саша Джинн](https://up.htmlacademy.ru/adaptive/17/user/354189).
-* Наставник: `Неизвестно`.
+* Наставник: [Юлия Антонова](https://up.htmlacademy.ru/adaptive/17/user/39082).
 
 ---
 
