@@ -1,6 +1,7 @@
 {
   "extends": "stylelint-config-htmlacademy",
 
+  "ignoreFiles": ["*.json"],
   "rules": {
     "declaration-no-important": true,
     "indentation": [2, {"ignore": ["inside-parens"]}]
