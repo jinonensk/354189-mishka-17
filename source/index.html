@@ -6,13 +6,24 @@
   </head>
   <body>
     <header class="main-header">
-      <img class="main-header__logo" src="#" alt="Логотип">
+      <a class="main-header__logo logo" href="#">
+        <img class="logo__image" src="#" alt="Логотип">
+      </a>
       <div class="main-header__links-wrapper">
-        <a class="main-header__button" href="#"></a>
+        <button class="main-header__button" type="button"></button>
         <nav class="main-header__nav">
-          <ul class="main-header__links">
-            <li class="main-header__link">
-              <a href="#"></a>
+          <ul class="navigation">
+            <li class="navigation__link">
+              <a href="#">Каталог товаров</a>
+            </li>
+            <li class="navigation__link">
+              <a href="#">Вязание на заказ</a>
+            </li>
+            <li class="navigation__link navigation__link--search">
+              <a href="#">Поиск по сайту</a>
+            </li>
+            <li class="navigation__link navigation__link--basket">
+              <a class="basket" href="#">Корзина: <span class="basket__quontity">пока пуста</span></a>
             </li>
           </ul>
         </nav>
@@ -33,27 +44,27 @@
           </li>
         </ul>
       </section>
-      <section class="weekly">
-        <h2 class="weekly__item-title">Вязанные корзинки</h2>
-        <strong class="weekly__title">Товар недели</strong>
-        <p class="weekly__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-        <table class="weekly__table">
-          <tr class="weekly__row">
-            <td class="weekly__cell">Цвет:</td>
-            <td class="weekly__cell">«‎Тиффани»/серый</td>
+      <section class="popular-item">
+        <h2 class="popular-item__item-title">Вязанные корзинки</h2>
+        <p class="popular-itemy__title">Товар недели</p>
+        <p class="popular-item__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+        <table class="popular-item__table">
+          <tr class="popular-item__row">
+            <th class="popular-item__cell">Цвет:</th>
+            <td class="popular-item__cell">«‎Тиффани»/серый</td>
           </tr>
-          <tr class="weekly__row">
-            <td class="weekly__cell">Диаметр:</td>
-            <td class="weekly__cell">25 см</td>
+          <tr class="popular-item__row">
+            <th class="popular-item__cell">Диаметр:</th>
+            <td class="popular-item__cell">25 см</td>
           </tr>
-          <tr class="weekly__row">
-            <td class="weekly__cell">Высота:</td>
-            <td class="weekly__cell">15 см</td>
+          <tr class="popular-item__row">
+            <th class="popular-item__cell">Высота:</th>
+            <td class="popular-item__cell">15 см</td>
           </tr>
         </table>
-        <img class="weekly__image" src="" alt="">
-        <p class="weekly__price">Цена: 990 руб.</p>
-        <a class="weekly__button button" href="#">Заказать</a>
+        <img class="popular-item__image" src="" alt="">
+        <p class="popular-item__price">Цена: 990 руб.</p>
+        <a class="popular-item__button button" href="#">Заказать</a>
       </section>
       <section class="about">
         <h2 class="about__title">Коротко о нас:</h2>
@@ -79,27 +90,27 @@
         </ul>
         <ul class="reviews__slider-buttons">
           <li class="reviews__slider-button">
-            <button class="reviews__slider-button reviews__slider-button--previous" aria-label="Назад"></button>
+            <button class="reviews__slider-button reviews__slider-button--previous" type="button" aria-label="Назад"></button>
           </li>
           <li class="reviews__slider-button">
-            <button class="reviews__slider-button reviews__slider-button--next" aria-label="Вперед"></button>
+            <button class="reviews__slider-button reviews__slider-button--next" type="button" aria-label="Вперед"></button>
           </li>
-          <a class="reviews__button button" href="#">Написать</a>
         </ul>
+        <a class="reviews__button button" href="#">Написать</a>
       </section>
       <section class="contacts">
         <h2 class="contacts__title">Контакты</h2>
         <table class="contacts__table">
           <tr class="contacts__row">
-            <td class="contacts__cell">e-mail:</td>
+            <th class="contacts__cell">e-mail:</th>
             <td class="contacts__cell">info@mimimishkashop.ru</td>
           </tr>
           <tr class="contacts__row">
-            <td class="contacts__cell">адрес:</td>
+            <th class="contacts__cell">адрес:</th>
             <td class="contacts__cell">г. Санкт-Петербург, ул. Большая Конюшенная, д.19/8, офис 101</td>
           </tr>
         </table>
-        <img class="contacts__map" src="" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д.19/8, офис 101">
+        <iframe class="contacts__yandex-map" src="https://yandex.ru/map-widget/v1/-/CCG7UUNc" allowfullscreen></iframe>
         <a class="contacts__button button" href="#">Напишите нам</a>
       </section>
     </main>
@@ -114,7 +125,9 @@
       </ul>
       <div class="main-footer__developers developers">
         <p class="developers__text">Разработано</p>
-        <img class="developers__logo" src="" alt="HTML Academy Logo">
+        <a class="developers__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="developers__logo" src="" alt="HTML Academy Logo">
+        </a>
       </div>
     </footer>
   </body>

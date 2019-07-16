@@ -6,42 +6,65 @@
   </head>
   <body>
     <header class="main-header">
-      <img class="main-header__logo" src="#" alt="Логотип">
+      <a class="main-header__logo logo" href="index.html">
+        <img class="logo__image" src="#" alt="Логотип">
+      </a>
       <div class="main-header__links-wrapper">
-        <a class="main-header__button" href="#"></a>
+        <button class="main-header__button" type="button"></button>
         <nav class="main-header__nav">
-          <ul class="main-header__links">
-            <li class="main-header__link">
-              <a href="#"></a>
+          <ul class="navigation">
+            <li class="navigation__link">
+              <a href="#">Каталог товаров</a>
+            </li>
+            <li class="navigation__link">
+              <a href="#">Вязание на заказ</a>
+            </li>
+            <li class="navigation__link navigation__link--search">
+              <a href="#">Поиск по сайту</a>
+            </li>
+            <li class="navigation__link navigation__link--basket">
+              <a class="basket" href="#">Корзина: <span class="basket__quontity">пока пуста</span></a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
-    <main class="main-catalog">
+    <main class="page">
+      <h1 class="page__title">Каталог товаров</h1>
       <section class="catalog">
-        <h1 class="catalog__title">Каталог товаров</h1>
         <ul class="catalog__list">
-          <li class="catalog__item">
-            <img class="catalog__image" src="" alt="Заяц">
-            <h2 class="catalog__subtitle">Зайчик-попрыгайчик</h2>
-            <p class="catalog__description">Рост 30 см, вес 200 г</p>
-            <p class="catalog__price">1 200 руб.</p>
-            <button class="catalog__button" aria-label="Добавить в корзину"></button>
+          <li class="catalog__item product">
+            <a class="product__image-link" href="#">
+              <img class="product__image" src="" alt="Заяц">
+            </a>
+            <a class="product__subtitle-link" href="#">
+              <h2 class="product__subtitle">Зайчик-попрыгайчик</h2>
+            </a>
+            <p class="product__description">Рост 30 см, вес 200 г</p>
+            <p class="product__price">1 200 руб.</p>
+            <a class="product__button" href="#" aria-label="Добавить в корзину"></a>
           </li>
-          <li class="catalog__item">
-            <img class="catalog__image" src="" alt="Козинка для белья">
-            <h2 class="catalog__subtitle">Козинка для белья</h2>
-            <p class="catalog__description">Диаметр 15 см, высота 10 см</p>
-            <p class="catalog__price">650 руб.</p>
-            <button class="catalog__button" aria-label="Добавить в корзину"></button>
+          <li class="catalog__item product">
+            <a class="product__image-link" href="#">
+              <img class="product__image" src="" alt="Козинка для белья">
+            </a>
+            <a class="product__subtitle-link" href="#">
+              <h2 class="product__subtitle">Козинка для белья</h2>
+            </a>
+            <p class="product__description">Диаметр 15 см, высота 10 см</p>
+            <p class="product__price">650 руб.</p>
+            <a class="product__button" href="#" aria-label="Добавить в корзину"></a>
           </li>
-          <li class="catalog__item">
-            <img class="catalog__image" src="" alt="Большая козинка для игрушек">
-            <h2 class="catalog__subtitle">Большая козинка для игрушек</h2>
-            <p class="catalog__description">Диаметр 30 см, высота 30 см</p>
-            <p class="catalog__price">1 500 руб.</p>
-            <button class="catalog__button" aria-label="Добавить в корзину"></button>
+          <li class="catalog__item product">
+            <a class="product__image-link" href="#">
+              <img class="product__image" src="" alt="Большая козинка для игрушек">
+            </a>
+            <a class="product__subtitle-link" href="#">
+              <h2 class="product__subtitle">Большая козинка для игрушек</h2>
+            </a>
+            <p class="product__description">Диаметр 30 см, высота 30 см</p>
+            <p class="product__price">1 500 руб.</p>
+            <a class="product__button" href="#" aria-label="Добавить в корзину"></a>
           </li>
         </ul>
       </section>
