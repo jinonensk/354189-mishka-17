@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <a class="main-header__logo logo" href="index.html">
+        <img class="logo__image" src="#" alt="Логотип">
+      </a>
+      <div class="main-header__links-wrapper">
+        <button class="main-header__button" type="button"></button>
+        <nav class="main-header__nav">
+          <ul class="navigation">
+            <li class="navigation__link">
+              <a href="#">Каталог товаров</a>
+            </li>
+            <li class="navigation__link">
+              <a href="#">Вязание на заказ</a>
+            </li>
+            <li class="navigation__link navigation__link--search">
+              <a href="#">Поиск по сайту</a>
+            </li>
+            <li class="navigation__link navigation__link--basket">
+              <a class="basket" href="#">Корзина: <span class="basket__quontity">пока пуста</span></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="page">
+      <h1 class="page__title">Каталог товаров</h1>
+      <section class="catalog">
+        <ul class="catalog__list">
+          <li class="catalog__item product">
+            <a class="product__image-link" href="#">
+              <img class="product__image" src="" alt="Заяц">
+            </a>
+            <a class="product__subtitle-link" href="#">
+              <h2 class="product__subtitle">Зайчик-попрыгайчик</h2>
+            </a>
+            <p class="product__description">Рост 30 см, вес 200 г</p>
+            <p class="product__price">1 200 руб.</p>
+            <a class="product__button" href="#" aria-label="Добавить в корзину"></a>
+          </li>
+          <li class="catalog__item product">
+            <a class="product__image-link" href="#">
+              <img class="product__image" src="" alt="Козинка для белья">
+            </a>
+            <a class="product__subtitle-link" href="#">
+              <h2 class="product__subtitle">Козинка для белья</h2>
+            </a>
+            <p class="product__description">Диаметр 15 см, высота 10 см</p>
+            <p class="product__price">650 руб.</p>
+            <a class="product__button" href="#" aria-label="Добавить в корзину"></a>
+          </li>
+          <li class="catalog__item product">
+            <a class="product__image-link" href="#">
+              <img class="product__image" src="" alt="Большая козинка для игрушек">
+            </a>
+            <a class="product__subtitle-link" href="#">
+              <h2 class="product__subtitle">Большая козинка для игрушек</h2>
+            </a>
+            <p class="product__description">Диаметр 30 см, высота 30 см</p>
+            <p class="product__price">1 500 руб.</p>
+            <a class="product__button" href="#" aria-label="Добавить в корзину"></a>
+          </li>
+        </ul>
+      </section>
+      <section class="production">
+        <h2 class="production__title">Процесс производства</h2>
+        <video class="production__video" src=""></video>
+        <p class="production__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются ваши товары.</p>
+        <a class="production__button button" href="#">Сделать заказ</a>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <ul class="main-footer__social-list social-list">
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--instargam" href="#" aria-label="Инстаграм"></a></li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--facebook" href="#" aria-label="Фейсбук"></a></li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--twitter" href="#" aria-label="Твиттер"></a></li>
+      </ul>
+      <div class="main-footer__developers developers">
+        <p class="developers__text">Разработано</p>
+        <img class="developers__logo" src="" alt="HTML Academy Logo">
+      </div>
+    </footer>
+  </body>
+</html>
