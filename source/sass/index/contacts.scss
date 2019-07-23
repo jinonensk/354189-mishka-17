@@ -1,0 +1,12 @@
+.contacts {
+  font-family: 'Opensans';
+  font-weight: 400;
+  font-size: $fs-basic;
+  line-height: $lh-big;
+  color: $secondary-dark;
+  &__title {
+    margin: 0;
+
+    color: $primary-dark;
+  }
+}

@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "Opensans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Opensans Regular"),
+  url("../fonts/opensans.woff") format("woff"),
+  url("../fonts/opensans.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Opensans";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Opensans Bold"),
+  url("../fonts/opensans.woff") format("woff"),
+  url("../fonts/opensans.woff2") format("woff2");
+}
+
+@import './constants.scss';
+
+
+// ---- cross pages component
+// header
+@import './header/main-header.scss';
+@import './header/navigation.scss';
+@import './header/logo.scss';
+
+// footer
+@import './footer/developers.scss';
+@import './footer/main-footer.scss';
+@import './footer/social-list.scss';
+
+// ---- pages
+// index
+@import './index/about.scss';
+@import './index/button.scss';
+@import './index/contacts.scss';
+@import './index/goods.scss';
+@import './index/main-index.scss';
+@import './index/popular-item.scss';
+@import './index/reviews.scss';
+@import './index/review.scss';
+
+// catalog
+@import './catalog/catalog.scss';
+@import './catalog/page.scss';
+@import './catalog/product.scss';
+@import './catalog/production.scss';
+
+// form
+@import './form/order.scss';
+
+body {
+  background-color: lightgray;
+}

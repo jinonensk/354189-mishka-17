@@ -1,0 +1,17 @@
+.about {
+  font-family: 'Opensans';
+  font-weight: 700;
+  font-size: $fs-basic-large;
+  line-height: $lh-medium;
+  color: $primary-dark;
+  &__title {
+    font-size: $fs-title-small;
+    line-height: $lh-big;
+  }
+  &__list {
+    margin: 0px;
+    padding: 0px;
+
+    list-style: none;
+  }
+}

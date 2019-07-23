@@ -1,0 +1,18 @@
+.page {
+  font-family: 'Opensans';
+  &__title {
+    margin: 0px auto;
+
+    font-weight: 700;
+    font-size: $fs-title;
+    line-height: $lh-big;
+    color: $primary-dark;
+  }
+  &__desciprion {
+    font-weight: 400;
+    font-size: $fs-small;
+    line-height: $lh-medium;
+    color: $secondary-dark;
+
+  }
+}

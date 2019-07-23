@@ -1,0 +1,12 @@
+.main-index {
+  &__title {
+    margin: 0px;
+
+    font-family: 'Opensans';
+    font-weight: 700;
+    font-size: $fs-title;
+    line-height: $lh-big;
+    color: $primary-dark;
+    text-align: center;
+  }
+}

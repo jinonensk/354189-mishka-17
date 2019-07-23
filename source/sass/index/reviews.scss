@@ -1,0 +1,26 @@
+.reviews {
+  font-family: 'Opensans';
+  font-weight: 400;
+  font-size: $fs-basic;
+  line-height: $lh-big;
+  color: $secondary-dark;
+  &__title {
+    margin: 0px;
+
+    font-size: $fs-title-small;
+    line-height: $lh-big;
+    color: $primary-dark;
+  }
+  &__list {
+    margin: 0px;
+    padding: 0px;
+
+    list-style: none;
+  }
+  &__slider-buttons {
+    margin: 0px;
+    padding: 0px;
+
+    list-style: none;
+  }
+}

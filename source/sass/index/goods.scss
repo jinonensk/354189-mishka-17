@@ -1,0 +1,16 @@
+.goods {
+  &__list {
+    margin: 0px;
+    padding: 0px;
+
+    list-style: none;
+  }
+  &__link {
+    font-family: 'Opensans';
+    font-weight: 700;
+    font-size: $fs-subtitle;
+    line-height: $lh-medium;
+    color: $primary-light;
+    text-decoration: none;
+  }
+}

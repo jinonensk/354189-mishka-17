@@ -3,27 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
     <header class="main-header">
-      <a class="main-header__logo logo" href="index.html">
+      <a class="main-header__logo logo" href="#">
         <img class="logo__image" src="#" alt="Логотип">
       </a>
       <div class="main-header__links-wrapper">
         <button class="main-header__button" type="button"></button>
         <nav class="main-header__nav">
           <ul class="navigation">
-            <li class="navigation__link">
-              <a href="#">Каталог товаров</a>
+            <li class="navigation__item">
+              <a class="navigation__link" href="catalog.html">Каталог товаров</a>
             </li>
-            <li class="navigation__link">
-              <a href="#">Вязание на заказ</a>
+            <li class="navigation__item">
+              <a class="navigation__link" href="form.html">Вязание на заказ</a>
             </li>
-            <li class="navigation__link navigation__link--search">
-              <a href="#">Поиск по сайту</a>
+            <li class="navigation__item navigation__item--search">
+              <a class="navigation__link" href="#">Поиск по сайту</a>
             </li>
-            <li class="navigation__link navigation__link--basket">
-              <a class="basket" href="#">Корзина: <span class="basket__quontity">пока пуста</span></a>
+            <li class="navigation__item navigation__item--basket">
+              <a class="navigation__link basket" href="#">Корзина: <span class="basket__quontity">пока пуста</span></a>
             </li>
           </ul>
         </nav>
@@ -32,7 +33,7 @@
     <main class="page">
       <h1 class="page__title">Вязание на заказ</h1>
       <p class="page__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-      <form class="form__order order" action="">
+      <form class="order" action="">
         <fieldset class="order__fieldset">
           <legend class="order__legend">Тип</legend>
           <ul class="order__type-list">
@@ -77,28 +78,28 @@
         </fieldset>
         <fieldset class="order__fieldset">
           <p class="order__legend">ФИО</p>
-          <ul class="order_user-list">
-            <li class="order_user-item">
+          <ul class="order__user-list">
+            <li class="order__user-item">
               <label class="order__label">Имя</label>
               <input class="order__user-input" type="text" placeholder="Введите ваше имя*" required>
             </li>
-            <li class="order_user-item">
+            <li class="order__user-item">
               <label class="order__label">Фамилия</label>
               <input class="order__user-input" type="text" placeholder="Укажите фамилию*" required>
             </li>
-            <li class="order_user-item">
+            <li class="order__user-item">
               <label class="order__label">Отчество</label>
               <input class="order__user-input" type="text" placeholder="Отчество, если желаете">
             </li>
-            <li class="order_user-item">
+            <li class="order__user-item">
               <label class="order__legend">Тел</label>
               <input class="order__user-input order__user-input--phone" type="tel" placeholder="+7 XXX XXX XX XX*" required>
             </li>
-            <li class="order_user-item">
+            <li class="order__user-item">
               <label class="order__legend">E-mail</label>
               <input class="order__user-input order__user-input--email" type="email" placeholder="Ваш Email*" required>
             </li>
-            <li class="order_user-item">
+            <li class="order__user-item">
               <label class="order__legend">Доп</label>
               <textarea class="order__user-message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </li>
