@@ -1,11 +1,13 @@
 .production {
-  font-family: 'Opensans';
+  font-family: "Opensans", "Arial", sans-serif;
   line-height: $lh-medium;
+
   &__title {
     font-weight: 700;
     color: $primary-dark;
     font-size: $fs-basic-large;
   }
+
   &__description {
     font-weight: 400;
     color: $secondary-dark;

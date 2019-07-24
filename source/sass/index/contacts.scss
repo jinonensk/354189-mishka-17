@@ -1,14 +1,15 @@
 .contacts {
-  font-family: 'Opensans';
+  font-family: "Opensans", "Arial", sans-serif;
   font-weight: 400;
   font-size: $fs-basic;
   line-height: $lh-big;
   color: $secondary-dark;
+
   &__title {
     margin: 0;
-
     color: $primary-dark;
   }
+
   &__yandex-map {
     width: 100%;
   }

@@ -1,62 +1,69 @@
 .about {
-  font-family: 'Opensans';
+  font-family: "Opensans", "Arial", sans-serif;
   font-weight: 700;
   font-size: $fs-basic-large;
   line-height: $lh-medium;
   color: $primary-dark;
+
   &__title {
     font-size: $fs-title-small;
     line-height: $lh-big;
   }
-  &__list {
-    margin: 0px;
-    padding: 0px;
 
+  &__list {
+    margin: 0;
+    padding: 0;
     list-style: none;
   }
+
   &__item {
     margin-bottom: 30px;
     padding-top: 50px;
-
   }
+
   &__item--ecology {
-    background-image: url(../../img/icon-feature-flower.svg);
+    background-image: url("../../img/icon-feature-flower.svg");
     background-repeat: no-repeat;
     background-size: 35px;
     background-position: left top;
-  }
-  &__item--price {
-    background-image: url(../../img/icon-feature-money.svg);
-    background-repeat: no-repeat;
-    background-size: 35px;
-    background-position: left top;
-  }
-  &__item--like {
-    background-image: url(../../img/icon-feature-heart.svg);
-    background-repeat: no-repeat;
-    background-size: 35px;
-    background-position: left top;
-  }
-  &__item--love {
-    background-image: url(../../img/icon-feature-ball.svg);
-    background-repeat: no-repeat;
-    background-size: 35px;
-    background-position: left top;
-  }
-  &__item--patriotic {
-    background-image: url(../../img/icon-feature-rocket.svg);
-    background-repeat: no-repeat;
-    background-size: 35px;
-    background-position: left top;
-  }
-  &__item--gift {
-    background-image: url(../../img/icon-feature-gift.svg);
-    background-repeat: no-repeat;
-    background-size: 35px;
-    background-position: left top;
-  }
-  &__paragraph {
-    margin: 0px;
   }
 
+  &__item--price {
+    background-image: url("../../img/icon-feature-money.svg");
+    background-repeat: no-repeat;
+    background-size: 35px;
+    background-position: left top;
+  }
+
+  &__item--like {
+    background-image: url("../../img/icon-feature-heart.svg");
+    background-repeat: no-repeat;
+    background-size: 35px;
+    background-position: left top;
+  }
+
+  &__item--love {
+    background-image: url("../../img/icon-feature-ball.svg");
+    background-repeat: no-repeat;
+    background-size: 35px;
+    background-position: left top;
+  }
+
+  &__item--patriotic {
+    background-image: url("../../img/icon-feature-rocket.svg");
+    background-repeat: no-repeat;
+    background-size: 35px;
+    background-position: left top;
+  }
+
+  &__item--gift {
+    background-image: url("../../img/icon-feature-gift.svg");
+    background-repeat: no-repeat;
+    background-size: 35px;
+    background-position: left top;
+  }
+
+  &__paragraph {
+    margin: 0;
+  }
 }

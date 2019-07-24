@@ -1,21 +1,25 @@
 .product {
-  font-family: 'Opensans';
+  font-family: "Opensans", "Arial", sans-serif;
   font-weight: 700;
   color: $primary-dark;
+
   &__subtitle-link {
     text-decoration: none;
   }
+
   &__subtitle {
     font-size: $fs-basic-large;
     line-height: $lh-medium;
     color: $primary-dark;
   }
+
   &__description {
     font-size: $fs-small;
     line-height: $lh-big;
     color: $secondary-dark;
     font-weight: 400;
   }
+
   &__price {
     font-size: $fs-basic;
     line-height: $lh-medium;

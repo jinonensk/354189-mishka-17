@@ -1,22 +1,20 @@
 .page {
   @include container-mobile;
+  font-family: "Opensans", "Arial", sans-serif;
 
-  font-family: 'Opensans';
   &__title {
-    margin: 0px auto;
-
+    margin: 0 auto;
     font-weight: 700;
     font-size: $fs-title;
     line-height: $lh-big;
     color: $primary-dark;
-
     background-color: $secondary-light;
   }
+
   &__desciprion {
     font-weight: 400;
     font-size: $fs-small;
     line-height: $lh-medium;
     color: $secondary-dark;
-
   }
 }

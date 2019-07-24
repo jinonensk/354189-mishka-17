@@ -2,9 +2,8 @@
   @include container-mobile;
 
   &__title {
-    margin: 0px;
-
-    font-family: 'Opensans';
+    margin: 0;
+    font-family: "Opensans", "Arial", sans-serif;
     font-weight: 700;
     font-size: $fs-title;
     line-height: $lh-big;

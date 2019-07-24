@@ -1,35 +1,37 @@
 .order {
-  font-family: 'Opensans';
+  font-family: "Opensans", "Arial", sans-serif;
   font-weight: 700;
   font-size: $fs-basic-large;
   line-height: $lh-small;
   color: $primary-dark;
+
   &__legend {
     text-transform: uppercase;
     color: $highlighted-light;
   }
+
   &__footnote {
     color: $secondary-dark;
     font-weight: 400;
     font-size: $fs-small;
     line-height: $lh-small;
   }
+
   &__type-list {
-    margin: 0px;
-    padding: 0px;
-
+    margin: 0;
+    padding: 0;
     list-style: none;
   }
+
   &__colors-item {
-    margin: 0px;
-    padding: 0px;
-
+    margin: 0;
+    padding: 0;
     list-style: none;
   }
-  &__user-list {
-    margin: 0px;
-    padding: 0px;
 
+  &__user-list {
+    margin: 0;
+    padding: 0;
     list-style: none;
   }
 }

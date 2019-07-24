@@ -1,11 +1,13 @@
 .review {
-  margin: 0px;
+  margin: 0;
+
   &__author {
     font-style: normal;
     font-size: $fs-basic-large;
     line-height: $lh-small;
     color: $primary-dark;
   }
+
   &__link {
     font-size: $fs-basic-large;
     color: $secondary-dark;
