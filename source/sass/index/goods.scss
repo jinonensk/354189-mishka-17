@@ -5,6 +5,12 @@
 
     list-style: none;
   }
+  &__item--interior {
+    background-color: $highlighted-light;
+  }
+  &__item--kids {
+    background-color: $highlighted-dark;
+  }
   &__link {
     font-family: 'Opensans';
     font-weight: 700;

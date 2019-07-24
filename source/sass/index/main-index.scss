@@ -1,4 +1,6 @@
 .main-index {
+  @include container-mobile;
+
   &__title {
     margin: 0px;
 

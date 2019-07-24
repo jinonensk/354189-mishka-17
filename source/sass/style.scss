@@ -17,6 +17,7 @@
 }
 
 @import './constants.scss';
+@import './mixins.scss';
 
 
 // ---- cross pages component
@@ -49,7 +50,3 @@
 
 // form
 @import './form/order.scss';
-
-body {
-  background-color: lightgray;
-}

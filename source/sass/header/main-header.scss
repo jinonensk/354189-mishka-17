@@ -1,3 +1,7 @@
 .main-header {
-
+  // width: 320px;
+  // margin: auto;
+  // padding: 0 30px;
+  // box-sizing: border-box;
+  @include container-mobile
 }
