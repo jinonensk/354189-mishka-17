@@ -1,52 +1,23 @@
-@font-face {
-  font-family: "Opensans";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Opensans Regular"),
-    url("../fonts/opensans.woff") format("woff"),
-    url("../fonts/opensans.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "Opensans";
-  font-style: normal;
-  font-weight: 700;
-  src: local("Opensans Bold"),
-    url("../fonts/opensans.woff") format("woff"),
-    url("../fonts/opensans.woff2") format("woff2");
-}
-
+@import "./fonts.scss";
 @import "./constants.scss";
+@import "./base.scss";
 @import "./mixins.scss";
 
-
-// ---- cross pages component
-// header
-@import "./header/main-header.scss";
-@import "./header/navigation.scss";
-@import "./header/logo.scss";
-
-// footer
-@import "./footer/developers.scss";
-@import "./footer/main-footer.scss";
-@import "./footer/social-list.scss";
-
-// ---- pages
-// index
-@import "./index/about.scss";
-@import "./index/button.scss";
-@import "./index/contacts.scss";
-@import "./index/goods.scss";
-@import "./index/main-index.scss";
-@import "./index/popular-item.scss";
-@import "./index/reviews.scss";
-@import "./index/review.scss";
-
-// catalog
-@import "./catalog/catalog.scss";
-@import "./catalog/page.scss";
-@import "./catalog/product.scss";
-@import "./catalog/production.scss";
-
-// form
-@import "./form/order.scss";
+// blocks
+@import "./blocks/main-header.scss";
+@import "./blocks/navigation.scss";
+@import "./blocks/developers.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/social-list.scss";
+@import "./blocks/about.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/goods.scss";
+@import "./blocks/main-index.scss";
+@import "./blocks/popular-item.scss";
+@import "./blocks/reviews.scss";
+@import "./blocks/review.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/page.scss";
+@import "./blocks/product.scss";
+@import "./blocks/production.scss";
+@import "./blocks/order.scss";

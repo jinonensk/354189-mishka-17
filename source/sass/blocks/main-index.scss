@@ -1,0 +1,12 @@
+.main-index {
+  @include container;
+}
+
+.main-index__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: $fs-title;
+  line-height: $lh-big;
+  color: $primary-dark;
+  text-align: center;
+}

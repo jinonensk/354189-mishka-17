@@ -1,0 +1,27 @@
+.popular-item {
+  font-weight: 400;
+  font-size: $fs-basic;
+  line-height: $lh-medium;
+  color: $secondary-dark;
+}
+
+.popular-item__item-title {
+  font-weight: 700;
+  font-size: $fs-title-small;
+  line-height: $lh-big;
+  color: $primary-dark;
+}
+
+.popular-item__title {
+  font-weight: 700;
+  font-size: $fs-basic-large;
+  line-height: $lh-small;
+  color: $highlighted-light;
+  text-transform: uppercase;
+}
+
+.popular-item__price {
+  font-weight: 700;
+  font-size: $fs-basic-large;
+  line-height: $lh-medium;
+}

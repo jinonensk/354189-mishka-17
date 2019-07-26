@@ -1,0 +1,15 @@
+.contacts {
+  font-weight: 400;
+  font-size: $fs-basic;
+  line-height: $lh-big;
+  color: $secondary-dark;
+}
+
+.contacts__title {
+  margin: 0;
+  color: $primary-dark;
+}
+
+.contacts__yandex-map {
+  width: 100%;
+}

@@ -1,5 +1,5 @@
 .main-footer {
-  @include container-mobile;
+  @include container;
 
   background-color: $secondary-light;
 }

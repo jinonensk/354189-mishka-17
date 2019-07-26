@@ -1,0 +1,25 @@
+.reviews {
+  font-weight: 400;
+  font-size: $fs-basic;
+  line-height: $lh-big;
+  color: $secondary-dark;
+}
+
+.reviews__title {
+  margin: 0;
+  font-size: $fs-title-small;
+  line-height: $lh-big;
+  color: $primary-dark;
+}
+
+.reviews__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.reviews__slider-buttons {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

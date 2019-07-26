@@ -1,0 +1,15 @@
+.production {
+  line-height: $lh-medium;
+}
+
+.production__title {
+  font-weight: 700;
+  color: $primary-dark;
+  font-size: $fs-basic-large;
+}
+
+.production__description {
+  font-weight: 400;
+  color: $secondary-dark;
+  font-size: $fs-small;
+}
