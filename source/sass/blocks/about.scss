@@ -1,0 +1,68 @@
+.about {
+  font-weight: 700;
+  font-size: $fs-basic-large;
+  line-height: $lh-medium;
+  color: $primary-dark;
+}
+
+.about__title {
+  font-size: $fs-title-small;
+  line-height: $lh-big;
+}
+
+.about__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about__item {
+  margin-bottom: 30px;
+  padding-top: 50px;
+
+  &--ecology {
+    background-image: url("../../img/icon-feature-flower.svg");
+    background-repeat: no-repeat;
+    background-size: 35px;
+    background-position: left top;
+  }
+
+  &--price {
+    background-image: url("../../img/icon-feature-money.svg");
+    background-repeat: no-repeat;
+    background-size: 35px;
+    background-position: left top;
+  }
+
+  &--like {
+    background-image: url("../../img/icon-feature-heart.svg");
+    background-repeat: no-repeat;
+    background-size: 35px;
+    background-position: left top;
+  }
+
+  &--love {
+    background-image: url("../../img/icon-feature-ball.svg");
+    background-repeat: no-repeat;
+    background-size: 35px;
+    background-position: left top;
+  }
+
+  &--patriotic {
+    background-image: url("../../img/icon-feature-rocket.svg");
+    background-repeat: no-repeat;
+    background-size: 35px;
+    background-position: left top;
+  }
+
+  &--gift {
+    background-image: url("../../img/icon-feature-gift.svg");
+    background-repeat: no-repeat;
+    background-size: 35px;
+    background-position: left top;
+  }
+}
+
+.about p {
+  margin: 0;
+}

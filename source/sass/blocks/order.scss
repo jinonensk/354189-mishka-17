@@ -1,0 +1,36 @@
+.order {
+  font-weight: 700;
+  font-size: $fs-basic-large;
+  line-height: $lh-small;
+  color: $primary-dark;
+}
+
+.order__legend {
+  text-transform: uppercase;
+  color: $highlighted-light;
+}
+
+.order__footnote {
+  color: $secondary-dark;
+  font-weight: 400;
+  font-size: $fs-small;
+  line-height: $lh-small;
+}
+
+.order__type-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.order__colors-item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.order__user-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

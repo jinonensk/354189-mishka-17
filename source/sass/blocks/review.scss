@@ -1,0 +1,15 @@
+.review {
+  margin: 0;
+}
+
+.review__author {
+  font-style: normal;
+  font-size: $fs-basic-large;
+  line-height: $lh-small;
+  color: $primary-dark;
+}
+
+.review__link {
+  font-size: $fs-basic-large;
+  color: $secondary-dark;
+}

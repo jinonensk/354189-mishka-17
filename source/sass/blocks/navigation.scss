@@ -1,0 +1,14 @@
+.navigation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation__link {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: $fs-basic-large;
+  line-height: $lh-medium;
+  color: $primary-dark;
+  text-decoration: none;
+}

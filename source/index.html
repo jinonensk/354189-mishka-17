@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="./css/normalize.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -13,17 +15,17 @@
         <button class="main-header__button" type="button"></button>
         <nav class="main-header__nav">
           <ul class="navigation">
-            <li class="navigation__link">
-              <a href="#">Каталог товаров</a>
+            <li class="navigation__item">
+              <a class="navigation__link" href="catalog.html">Каталог товаров</a>
             </li>
-            <li class="navigation__link">
-              <a href="#">Вязание на заказ</a>
+            <li class="navigation__item">
+              <a class="navigation__link" href="form.html">Вязание на заказ</a>
             </li>
-            <li class="navigation__link navigation__link--search">
-              <a href="#">Поиск по сайту</a>
+            <li class="navigation__item navigation__item--search">
+              <a class="navigation__link" href="#">Поиск по сайту</a>
             </li>
-            <li class="navigation__link navigation__link--basket">
-              <a class="basket" href="#">Корзина: <span class="basket__quontity">пока пуста</span></a>
+            <li class="navigation__item navigation__item--basket">
+              <a class="navigation__link basket" href="#">Корзина: <span class="basket__quontity">пока пуста</span></a>
             </li>
           </ul>
         </nav>
@@ -46,7 +48,7 @@
       </section>
       <section class="popular-item">
         <h2 class="popular-item__item-title">Вязанные корзинки</h2>
-        <p class="popular-itemy__title">Товар недели</p>
+        <p class="popular-item__title">Товар недели</p>
         <p class="popular-item__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
         <table class="popular-item__table">
           <tr class="popular-item__row">
@@ -69,12 +71,12 @@
       <section class="about">
         <h2 class="about__title">Коротко о нас:</h2>
         <ul class="about__list">
-          <li class="about__item about__item--ecology">Экологически чистые материалы</li>
-          <li class="about__item about__item--price">Скандинавский стиль по российской цене</li>
-          <li class="about__item about__item--like">Увеличивает лайки на фотографиях</li>
-          <li class="about__item about__item--love">Связано вручную с любовью и умилением</li>
-          <li class="about__item about__item--patriotic">Поддержка отечественного производителя</li>
-          <li class="about__item about__item--gift">Поставляется в подарочной упаковке</li>
+          <li class="about__item about__item--ecology"><p>Экологически чистые материалы</p></li>
+          <li class="about__item about__item--price"><p>Скандинавский стиль по российской цене</p></li>
+          <li class="about__item about__item--like"><p>Увеличивает лайки на фотографиях</p></li>
+          <li class="about__item about__item--love"><p>Связано вручную с любовью и умилением</p></li>
+          <li class="about__item about__item--patriotic"><p>Поддержка отечественного производителя</p></li>
+          <li class="about__item about__item--gift"><p>Поставляется в подарочной упаковке</p></li>
         </ul>
       </section>
       <section class="reviews">
