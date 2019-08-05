@@ -1,8 +1,17 @@
 .contacts {
-  font-weight: 400;
-  font-size: $fs-basic;
-  line-height: $lh-big;
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  line-height: 30px;
   color: $secondary-dark;
+
+  // Для сетки
+  box-shadow: inset 0 0 0 1px rgba(255, 0, 0, 0.5);
+}
+
+.contacts__info-wrapper {
+  width: 260px;
+  margin: auto;
 }
 
 .contacts__title {
@@ -12,4 +21,63 @@
 
 .contacts__yandex-map {
   width: 100%;
+  height: 457px;
+}
+
+.contacts__button {
+  margin: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__info-wrapper {
+    width: 670px;
+    margin: auto;
+  }
+
+  .contacts__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .contacts__table {
+    display: flex;
+  }
+
+  .contacts__row {
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    @include container;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .contacts__info-wrapper {
+    width: 350px;
+    margin: 0;
+    margin-left: auto;
+  }
+
+  .contacts__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .contacts__row {
+    width: 100%;
+  }
+
+  .contacts__yandex-map {
+    width: 527px;
+    height: 457px;
+  }
+
+  .contacts__button {
+    margin-left: 175px;
+    margin-top: -53px;
+  }
 }

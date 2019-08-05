@@ -1,4 +1,4 @@
-.navigation {
+.user-tools {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -7,14 +7,7 @@
   box-shadow: inset 0 0 0 1px rgba(255, 0, 0, 0.5);
 }
 
-.navigation__item {
-  &--new,
-  &--sale {
-    display: none;
-  }
-}
-
-.navigation__link {
+.user-tools__link {
   display: block;
   padding: 10px;
   box-sizing: border-box;
@@ -26,26 +19,18 @@
   text-decoration: none;
 }
 
-
 @media (min-width: $tablet-width) {
-  .navigation {
-    width: 330px;
-    margin-top: 47px;
+  .user-tools {
+    width: 335px;
+    justify-content: flex-end;
     display: flex;
     flex-wrap: wrap;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .navigation {
+  .user-tools {
+    margin-left: auto;
     width: 45%;
-    margin-top: 0;
-  }
-
-  .navigation__item {
-    &--new,
-    &--sale {
-      display: block;
-    }
   }
 }

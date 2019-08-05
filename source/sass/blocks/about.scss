@@ -1,13 +1,17 @@
 .about {
+  @include container;
   font-weight: 700;
-  font-size: $fs-basic-large;
-  line-height: $lh-medium;
+  font-size: 17px;
+  line-height: 24px;
   color: $primary-dark;
+
+  // Для сетки
+  box-shadow: inset 0 0 0 1px rgba(255, 0, 0, 0.5);
 }
 
 .about__title {
-  font-size: $fs-title-small;
-  line-height: $lh-big;
+  font-size: 25px;
+  line-height: 30px;
 }
 
 .about__list {
@@ -65,4 +69,55 @@
 
 .about p {
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .about__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .about__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about__item {
+    width: 50%;
+
+    &--ecology {
+      order: -1;
+    }
+
+    &--price {
+      order: 3;
+    }
+
+    &--like {
+      order: 5;
+    }
+
+    &--love {
+      order: 2;
+    }
+
+    &--patriotic {
+      order: 4;
+    }
+
+    &--gift {
+      order: 6;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about {
+    padding: 0 175px;
+  }
+
+  .about__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

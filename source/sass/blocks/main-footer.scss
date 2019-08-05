@@ -3,3 +3,23 @@
 
   background-color: $secondary-light;
 }
+
+.main-footer__logo {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-footer {
+    display: flex;
+  }
+
+  .main-footer__logo {
+    display: block;
+  }
+
+  .main-footer__social-list {
+    margin: auto;
+  }
+}
+// @media (min-width: $desktop-width) {
+// }

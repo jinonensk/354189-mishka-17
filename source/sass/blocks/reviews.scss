@@ -1,14 +1,18 @@
 .reviews {
+  @include container;
   font-weight: 400;
-  font-size: $fs-basic;
-  line-height: $lh-big;
+  font-size: 15px;
+  line-height: 30px;
   color: $secondary-dark;
+
+  // Для сетки
+  box-shadow: inset 0 0 0 1px rgba(255, 0, 0, 0.5);
 }
 
 .reviews__title {
   margin: 0;
-  font-size: $fs-title-small;
-  line-height: $lh-big;
+  font-size: 25px;
+  line-height: 30px;
   color: $primary-dark;
 }
 
@@ -22,4 +26,54 @@
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    display: flex;
+    flex-wrap: wrap;
+    // width: $tablet-width;
+    // margin-left: -50px;
+    padding: 80px 50px 50px 50px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center left;
+    background-image: url("../../img/review@1x.jpg")
+    // А как здесь быть с фолбэком интересно ????
+  }
+
+  .reviews__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .reviews__list {
+    order: 2;
+  }
+
+  .reviews__slider-buttons {
+    display: flex;
+    order: 2;
+    margin-left: auto;
+    margin-top: -50px;
+  }
+
+  .reviews__button {
+    margin-left: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 80px 50px 50px 225px;
+    background-position: 50px center;
+  }
+
+  .reviews__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
