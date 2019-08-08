@@ -1,5 +1,6 @@
 .production {
   @include container;
+  position: relative;
   display: flex;
   flex-direction: column;
   line-height: 24px;
@@ -36,14 +37,19 @@
 }
 
 @media (min-width: $desktop-width) {
+  .production {
+    min-height: 461px;
+  }
+
   .production__video {
-    order: 0;
+    position: absolute;
+    top: 0;
+    left: 50px;
   }
 
   .production__title {
     align-self: flex-end;
     width: 350px;
-    margin-bottom: -150px;
     padding: 100px 50px 50px 50px;
     box-sizing: border-box;
   }
@@ -52,14 +58,12 @@
     align-self: flex-end;
     width: 350px;
     margin: 0;
-    margin-top: -350px;
     padding: 50px;
     box-sizing: border-box;
   }
 
   .production__button {
     margin-top: 0;
-    margin-bottom: 170px;
     margin-right: 40px;
     margin-left: auto;
   }

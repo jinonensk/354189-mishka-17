@@ -78,36 +78,37 @@
   }
 
   .about__list {
-    display: flex;
-    flex-wrap: wrap;
+    // display: flex;
+    // flex-wrap: wrap;
+    column-count: 2;
   }
 
   .about__item {
     width: 50%;
 
-    &--ecology {
-      order: -1;
-    }
+    // &--ecology {
+    //   order: -1;
+    // }
 
-    &--price {
-      order: 3;
-    }
+    // &--price {
+    //   order: 3;
+    // }
 
-    &--like {
-      order: 5;
-    }
+    // &--like {
+    //   order: 5;
+    // }
 
-    &--love {
-      order: 2;
-    }
+    // &--love {
+    //   order: 2;
+    // }
 
-    &--patriotic {
-      order: 4;
-    }
+    // &--patriotic {
+    //   order: 4;
+    // }
 
-    &--gift {
-      order: 6;
-    }
+    // &--gift {
+    //   order: 6;
+    // }
   }
 }
 

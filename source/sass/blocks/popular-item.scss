@@ -1,5 +1,6 @@
 .popular-item {
   @include container;
+  position: relative;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
@@ -35,7 +36,15 @@
 @media (min-width: $tablet-width) {
   .popular-item {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+    min-height: 460px;
+  }
+
+  .popular-item__picture {
+    position: absolute;
+    bottom: 0;
+    right: 50px;
   }
 
   .popular-item__title-wrapper {
@@ -60,14 +69,24 @@
 
   .popular-item__action-wrapper {
     width: 300px;
-    margin-top: -110px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .popular-item {
+    flex-direction: column;
+    min-height: 636px;
+  }
+
+  .popular-item__picture {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
   .popular-item__title-wrapper {
     flex-direction: row-reverse;
-    margin-bottom: -150px;
+    margin-top: 70px;
     z-index: 1;
   }
 
@@ -84,11 +103,15 @@
 
   .popular-item__description-wrapper {
     width: 33%;
+    margin-right: auto;
     padding-left: 175px;
-    padding-top: 160px;
+    padding-top: 50px;
   }
 
   .popular-item__action-wrapper {
-    padding-left: 165px;
+    width: 33%;
+    margin-top: 50px;
+    margin-right: auto;
+    padding-left: 175px;
   }
 }

@@ -1,5 +1,6 @@
 .reviews {
   @include container;
+  position: relative;
   font-weight: 400;
   font-size: 15px;
   line-height: 30px;
@@ -53,10 +54,10 @@
   }
 
   .reviews__slider-buttons {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
     display: flex;
-    order: 2;
-    margin-left: auto;
-    margin-top: -50px;
   }
 
   .reviews__button {

@@ -1,4 +1,5 @@
 .contacts {
+  position: relative;
   display: flex;
   flex-direction: column;
   font-size: 15px;
@@ -51,15 +52,14 @@
 @media (min-width: $desktop-width) {
   .contacts {
     @include container;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    min-height: 457px;
   }
 
   .contacts__info-wrapper {
     width: 350px;
     margin: 0;
-    margin-left: auto;
+    margin-left: 175px;
+    margin-right: auto;
   }
 
   .contacts__title {
@@ -72,12 +72,14 @@
   }
 
   .contacts__yandex-map {
+    position: absolute;
+    top: 0;
+    right: 50px;
     width: 527px;
     height: 457px;
   }
 
   .contacts__button {
     margin-left: 175px;
-    margin-top: -53px;
   }
 }
