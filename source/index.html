@@ -8,40 +8,42 @@
   </head>
   <body>
     <header class="main-header">
-      <a class="main-header__logo logo" href="#">
-        <picture>
-          <source media="(min-width: 1150px)" srcset="./img/logo-desktop.svg">
-          <source media="(min-width: 770px)" srcset="./img/logo-tablet.svg">
-          <img class="logo__image" src="./img/logo-mobile.svg" width="90" height="40" alt="Логотип">
-        </picture>
-      </a>
-      <div class="main-header__links-wrapper">
-        <button class="main-header__button" type="button"></button>
-        <nav class="main-header__nav">
-          <ul class="navigation">
-            <li class="navigation__item">
-              <a class="navigation__link" href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="form.html">Вязание на заказ</a>
-            </li>
-            <li class="navigation__item navigation__item--new">
-              <a class="navigation__link" href="#">Новые поступления</a>
-            </li>
-            <li class="navigation__item navigation__item--sale">
-              <a class="navigation__link" href="#">Распродажа</a>
-            </li>
-          </ul>
-          <ul class="user-tools">
-            <li class="user-tools__item user-tools__item--search">
-              <a class="user-tools__link" href="#">Поиск по сайту</a>
-            </li>
-            <li class="user-tools__item user-tools__item--basket">
-              <a class="user-tools__link basket" href="#">Корзина: <span class="basket__quontity">пока пуста</span></a>
-            </li>
-          </ul>
-        </nav>
-        <p class="main-header__delivery">Бесплатная доставка по России</p>
+      <div class="main-header__container">
+        <a class="main-header__logo logo" href="#">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="./img/logo-desktop.svg">
+            <source media="(min-width: 770px)" srcset="./img/logo-tablet.svg">
+            <img class="logo__image" src="./img/logo-mobile.svg" width="90" height="40" alt="Логотип">
+          </picture>
+        </a>
+        <div class="main-header__links-wrapper">
+          <button class="main-header__button" type="button"></button>
+          <nav class="main-header__nav">
+            <ul class="navigation">
+              <li class="navigation__item">
+                <a class="navigation__link" href="catalog.html">Каталог товаров</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="form.html">Вязание на заказ</a>
+              </li>
+              <li class="navigation__item navigation__item--new">
+                <a class="navigation__link" href="#">Новые поступления</a>
+              </li>
+              <li class="navigation__item navigation__item--sale">
+                <a class="navigation__link" href="#">Распродажа</a>
+              </li>
+            </ul>
+            <ul class="user-tools">
+              <li class="user-tools__item user-tools__item--search">
+                <a class="user-tools__link" href="#">Поиск по сайту</a>
+              </li>
+              <li class="user-tools__item user-tools__item--basket">
+                <a class="user-tools__link basket" href="#">Корзина: <span class="basket__quontity">пока пуста</span></a>
+              </li>
+            </ul>
+          </nav>
+          <p class="main-header__delivery">Бесплатная доставка по России</p>
+        </div>
       </div>
     </header>
     <main class="main-index">
