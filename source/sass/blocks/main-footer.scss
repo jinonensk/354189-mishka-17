@@ -1,5 +1,28 @@
 .main-footer {
-  @include container;
-
+  width: 100%;
   background-color: $secondary-light;
 }
+
+.main-footer__container {
+  @include container;
+}
+
+.main-footer__logo {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-footer__container {
+    display: flex;
+  }
+
+  .main-footer__logo {
+    display: block;
+  }
+
+  .main-footer__social-list {
+    margin: auto;
+  }
+}
+// @media (min-width: $desktop-width) {
+// }

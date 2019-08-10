@@ -1,13 +1,17 @@
 .about {
+  @include container;
   font-weight: 700;
-  font-size: $fs-basic-large;
-  line-height: $lh-medium;
+  font-size: 17px;
+  line-height: 24px;
   color: $primary-dark;
+
+  // Для сетки
+  box-shadow: inset 0 0 0 1px rgba(255, 0, 0, 0.5);
 }
 
 .about__title {
-  font-size: $fs-title-small;
-  line-height: $lh-big;
+  font-size: 25px;
+  line-height: 30px;
 }
 
 .about__list {
@@ -21,42 +25,42 @@
   padding-top: 50px;
 
   &--ecology {
-    background-image: url("../../img/icon-feature-flower.svg");
+    background-image: url("../img/icon-feature-flower.svg");
     background-repeat: no-repeat;
     background-size: 35px;
     background-position: left top;
   }
 
   &--price {
-    background-image: url("../../img/icon-feature-money.svg");
+    background-image: url("../img/icon-feature-money.svg");
     background-repeat: no-repeat;
     background-size: 35px;
     background-position: left top;
   }
 
   &--like {
-    background-image: url("../../img/icon-feature-heart.svg");
+    background-image: url("../img/icon-feature-heart.svg");
     background-repeat: no-repeat;
     background-size: 35px;
     background-position: left top;
   }
 
   &--love {
-    background-image: url("../../img/icon-feature-ball.svg");
+    background-image: url("../img/icon-feature-ball.svg");
     background-repeat: no-repeat;
     background-size: 35px;
     background-position: left top;
   }
 
   &--patriotic {
-    background-image: url("../../img/icon-feature-rocket.svg");
+    background-image: url("../img/icon-feature-rocket.svg");
     background-repeat: no-repeat;
     background-size: 35px;
     background-position: left top;
   }
 
   &--gift {
-    background-image: url("../../img/icon-feature-gift.svg");
+    background-image: url("../img/icon-feature-gift.svg");
     background-repeat: no-repeat;
     background-size: 35px;
     background-position: left top;
@@ -65,4 +69,30 @@
 
 .about p {
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .about__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .about__list {
+    column-count: 2;
+  }
+
+  .about__item {
+    break-inside: avoid;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about {
+    padding: 0 175px;
+  }
+
+  .about__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

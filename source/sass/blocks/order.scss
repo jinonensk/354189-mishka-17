@@ -1,8 +1,15 @@
 .order {
+  @include container;
   font-weight: 700;
-  font-size: $fs-basic-large;
-  line-height: $lh-small;
+  font-size: 17px;
+  line-height: 20px;
   color: $primary-dark;
+}
+
+.order__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 .order__legend {
@@ -13,11 +20,17 @@
 .order__footnote {
   color: $secondary-dark;
   font-weight: 400;
-  font-size: $fs-small;
-  line-height: $lh-small;
+  font-size: 13px;
+  line-height: 20px;
 }
 
 .order__type-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.order__colors-list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -34,3 +47,29 @@
   padding: 0;
   list-style: none;
 }
+
+@media (min-width: $tablet-width) {
+  .order__type-list {
+    width: 100%;
+    margin-left: 175px;
+    margin-top: -25px;
+  }
+
+  .order__colors-list {
+    width: 100%;
+    margin-left: 175px;
+    margin-top: -25px;
+  }
+
+  .order__legend {
+    display: inline-block;
+    width: 75px;
+    margin-right: 100px;
+  }
+
+  .order__user-list .order__label {
+    margin-left: 175px;
+  }
+}
+// @media (min-width: $desktop-width) {
+// }

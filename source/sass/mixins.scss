@@ -1,6 +1,16 @@
 @mixin container {
-  width: 320px;
+  width: $mobile-width;
   margin: auto;
   padding: 0 30px;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    padding: 0 50px;
+  }
 }

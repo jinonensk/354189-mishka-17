@@ -1,6 +1,10 @@
+.developers {
+  display: flex;
+}
+
 .developers__text {
   font-weight: 700;
-  font-size: $fs-subtitle;
-  line-height: $lh-small;
+  font-size: 19px;
+  line-height: 20px;
   color: $primary-dark;
 }

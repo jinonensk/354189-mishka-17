@@ -1,6 +1,21 @@
 .product {
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  margin-bottom: 30px;
   font-weight: 700;
   color: $primary-dark;
+
+  // Для сетки
+  box-shadow: inset 0 0 0 1px rgba(255, 0, 0, 0.5);
+}
+
+.product__info-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
 }
 
 .product__subtitle-link {
@@ -8,19 +23,58 @@
 }
 
 .product__subtitle {
-  font-size: $fs-basic-large;
-  line-height: $lh-medium;
+  margin: 0;
+  font-size: 17px;
+  line-height: 24px;
   color: $primary-dark;
 }
 
 .product__description {
-  font-size: $fs-small;
-  line-height: $lh-big;
+  margin: 0;
+  font-size: 13px;
+  line-height: 30px;
   color: $secondary-dark;
   font-weight: 400;
 }
 
 .product__price {
-  font-size: $fs-basic;
-  line-height: $lh-medium;
+  margin: 0;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.product__button {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+@media (min-width: $tablet-width) {
+  .product {
+    flex-direction: row;
+    margin-bottom: 55px;
+  }
+
+  .product__info-wrapper {
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product {
+    flex-direction: column;
+    width: 315px;
+    margin-right: auto;
+  }
+
+  .product:nth-child(3n) {
+    margin-right: 0;
+  }
 }

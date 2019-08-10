@@ -1,19 +1,51 @@
 .page {
+  width: 100%;
+}
+
+.page__title-wrapper {
+  background-color: $secondary-light;
+}
+
+.page__title-container {
   @include container;
 }
 
 .page__title {
   margin: 0 auto;
   font-weight: 700;
-  font-size: $fs-title;
-  line-height: $lh-big;
+  font-size: 27px;
+  line-height: 30px;
   color: $primary-dark;
-  background-color: $secondary-light;
+}
+
+.page__description-wrapper {
+  @include container;
 }
 
 .page__desciprion {
   font-weight: 400;
-  font-size: $fs-small;
-  line-height: $lh-medium;
+  font-size: 13px;
+  line-height: 24px;
   color: $secondary-dark;
+}
+
+
+@media (min-width: $tablet-width) {
+  .page__title {
+    margin: 0;
+    padding: 100px 0 80px 0;
+    margin-bottom: 80px;
+    font-size: 43px;
+    line-height: 50px;
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page__title {
+    padding: 100px 0 100px 0;
+    margin-bottom: 130px;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
