@@ -6,10 +6,27 @@
   font-style: normal;
   font-size: 17px;
   line-height: 20px;
+  font-weight: 700;
   color: $primary-dark;
+}
+
+.review__text {
+  margin: 0;
+  margin-bottom: 24px;
 }
 
 .review__link {
   font-size: 17px;
   color: $secondary-dark;
+}
+
+@media (min-width: $tablet-width) {
+  .review__author {
+    display: block;
+  }
+
+  .review__text {
+    margin-bottom: 62px;
+    letter-spacing: 1px;
+  }
 }

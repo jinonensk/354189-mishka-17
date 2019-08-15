@@ -21,10 +21,30 @@
 
 @media (min-width: $tablet-width) {
   .user-tools {
-    width: 335px;
+    width: 348px;
     justify-content: flex-end;
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .user-tools__item {
+    display: block;
+    border: 1px solid black;
+    &--search {
+      padding: 0;
+      width: 85px;
+      height: 85px;
+    }
+    &--basket {
+      align-self: flex-start;
+      padding: 31px 0 30px 32px;
+      width: 227px;
+      text-align: end;
+    }
+  }
+
+  .user-tools__link {
+    padding: 0;
   }
 }
 

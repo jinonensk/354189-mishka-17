@@ -1,6 +1,8 @@
 .popular-item {
   @include container;
   position: relative;
+  margin-bottom: 45px;
+  padding-top: 28px;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
@@ -12,6 +14,7 @@
 
 .popular-item__item-title {
   margin: 0;
+  margin-bottom: 5px;
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
@@ -20,6 +23,7 @@
 
 .popular-item__title {
   margin: 0;
+  margin-bottom: 23px;
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
@@ -27,10 +31,57 @@
   text-transform: uppercase;
 }
 
+.popular-item__description-wrapper {
+  margin-bottom: 29px;
+}
+
+.popular-item__description {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.popular-item__table {
+  display: flex;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.popular-item__table tbody {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.popular-item__row {
+  display: flex;
+  border-bottom: 1px solid red;
+  padding-bottom: 7px;
+  padding-top: 5px;
+}
+
+.popular-item__table th {
+  width: 95px;
+  text-align: left;
+  font-weight: 400;
+}
+
+.popular-item__image {
+  margin-bottom: 19px;
+}
+
 .popular-item__price {
+  margin: 0;
+  margin-bottom: 25px;
+  text-align: center;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
+}
+
+.popular-item__button {
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
@@ -39,11 +90,12 @@
     flex-direction: column;
     flex-wrap: wrap;
     min-height: 460px;
+    margin-bottom: 74px;
   }
 
   .popular-item__picture {
     position: absolute;
-    bottom: 0;
+    bottom: -25px;
     right: 50px;
   }
 
@@ -51,6 +103,7 @@
     display: flex;
     align-items: center;
     width: 100%;
+    margin-bottom: 34px;
   }
 
   .popular-item__item-title {
@@ -61,14 +114,32 @@
   .popular-item__title {
     width: 90px;
     margin-left: auto;
+    margin-bottom: 0;
+    padding: 15px 10px;
   }
 
   .popular-item__description-wrapper {
     width: 50%;
+    margin-bottom: 57px;
+  }
+
+  .popular-item__description {
+    width: 260px;
+    line-height: 29px;
+    margin-bottom: 39px;
+  }
+
+  .popular-item__table {
+    width: 295px;
+  }
+
+  .popular-item__price {
+    font-size: 21px;
+    margin-bottom: 34px;
   }
 
   .popular-item__action-wrapper {
-    width: 300px;
+    width: 291px;
   }
 }
 
