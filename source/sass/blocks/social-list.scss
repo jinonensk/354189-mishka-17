@@ -46,6 +46,7 @@
 
   .social-list__item {
     margin-right: 35px;
+    padding-top: 8px;
   }
 }
 
@@ -53,5 +54,10 @@
   .social-list {
     margin-left: 348px;
     margin-top: 11px;
+  }
+
+
+  .social-list__item {
+    padding-top: 0px;
   }
 }

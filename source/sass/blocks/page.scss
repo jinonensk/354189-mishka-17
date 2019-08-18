@@ -53,15 +53,25 @@
   }
 
   .page__description {
+    width: 700px;
+    margin-left: 174px;
     font-size: 17px;
     line-height: 25px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .page__title-container {
+    padding-top: 65px;
+  }
+
   .page__title {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .page__description-wrapper {
+    margin-top: 126px;
   }
 }
