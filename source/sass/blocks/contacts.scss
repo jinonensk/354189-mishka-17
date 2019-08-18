@@ -6,9 +6,6 @@
   font-size: 15px;
   line-height: 30px;
   color: $secondary-dark;
-
-  // Для сетки
-  box-shadow: inset 0 0 0 1px rgba(255, 0, 0, 0.5);
 }
 
 .contacts__info-wrapper {
@@ -113,12 +110,14 @@
   .contacts {
     @include container;
     min-height: 457px;
+    margin-bottom: 100px;
+    padding-top: 170px;
   }
 
   .contacts__info-wrapper {
     width: 350px;
     margin: 0;
-    margin-left: 175px;
+    margin-left: 170px;
     margin-right: auto;
   }
 
@@ -133,10 +132,22 @@
 
   .contacts__yandex-map {
     position: absolute;
-    top: 0;
+    top: 100px;
     right: 50px;
     width: 527px;
     height: 457px;
+  }
+
+  .contacts__table {
+    margin-bottom: 46px;
+  }
+
+  .contacts__table tbody {
+    flex-direction: column;
+  }
+
+  .contacts__row {
+    margin-bottom: 30px;
   }
 
   .contacts__button {

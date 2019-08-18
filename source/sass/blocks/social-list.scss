@@ -48,3 +48,10 @@
     margin-right: 35px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .social-list {
+    margin-left: 348px;
+    margin-top: 11px;
+  }
+}

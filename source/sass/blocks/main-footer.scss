@@ -1,6 +1,7 @@
 .main-footer {
   width: 100%;
   padding-top: 26px;
+  padding-bottom: 23px;
   background-color: $secondary-light;
 }
 
@@ -15,6 +16,7 @@
 @media (min-width: $tablet-width) {
   .main-footer {
     padding-top: 55px;
+    padding-bottom: 50px;
   }
 
   .main-footer__container {
@@ -27,7 +29,15 @@
 
   .main-footer__social-list {
     padding-top: 5px;
+
   }
 }
-// @media (min-width: $desktop-width) {
-// }
+@media (min-width: $desktop-width) {
+  .main-footer {
+    padding-top: 50px;
+  }
+
+  .main-footer__developers {
+    margin-top: 5px;
+  }
+}

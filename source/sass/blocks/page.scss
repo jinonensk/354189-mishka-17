@@ -8,6 +8,9 @@
 
 .page__title-container {
   @include container;
+  display: flex;
+  padding-top: 70px;
+  min-height: 175px;
 }
 
 .page__title {
@@ -20,9 +23,12 @@
 
 .page__description-wrapper {
   @include container;
+  margin-top: 24px;
+  margin-bottom: 22px;
 }
 
-.page__desciprion {
+.page__description {
+  margin: 0;
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
@@ -32,19 +38,29 @@
 
 @media (min-width: $tablet-width) {
   .page__title {
-    margin: 0;
-    padding: 100px 0 80px 0;
-    margin-bottom: 80px;
+    min-height: 125px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-top: 30px;
     font-size: 43px;
     line-height: 50px;
     text-align: center;
+  }
+
+  .page__description-wrapper {
+    margin-top: 80px;
+    margin-bottom: 60px;
+  }
+
+  .page__description {
+    font-size: 17px;
+    line-height: 25px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page__title {
-    padding: 100px 0 100px 0;
-    margin-bottom: 130px;
+    margin-bottom: 30px;
     font-size: 53px;
     line-height: 57px;
   }

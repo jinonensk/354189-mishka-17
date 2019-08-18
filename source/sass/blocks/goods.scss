@@ -1,9 +1,6 @@
 .goods {
   @include container;
   padding: 0;
-
-  // Для сетки
-  box-shadow: inset 0 0 0 1px rgba(255, 0, 0, 0.5);
 }
 
 .goods__list {
@@ -54,5 +51,9 @@
     line-height: 28px;
   }
 }
-// @media (min-width: $desktop-width) {
-// }
+
+@media (min-width: $desktop-width) {
+  .goods {
+    margin-bottom: 72px;
+  }
+}

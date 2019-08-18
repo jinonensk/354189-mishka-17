@@ -6,9 +6,6 @@
   font-size: 15px;
   line-height: 30px;
   color: $secondary-dark;
-
-  // Для сетки
-  box-shadow: inset 0 0 0 1px rgba(255, 0, 0, 0.5);
 }
 
 .reviews__title {
@@ -104,12 +101,21 @@
   .reviews {
     display: flex;
     flex-wrap: wrap;
-    padding: 80px 50px 50px 225px;
+    margin-bottom: 60px;
+    padding: 72px 50px 67px 225px;
     background-position: 50px center;
   }
 
   .reviews__title {
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .reviews__buttons-list {
+    bottom: 60px;
+  }
+
+  .reviews__button {
+    margin-top: 7px;
   }
 }
