@@ -41,7 +41,6 @@
     min-height: 125px;
     margin: 0 auto;
     padding-top: 30px;
-    padding-top: 30px;
     font-size: 43px;
     line-height: 50px;
     text-align: center;
@@ -53,8 +52,6 @@
   }
 
   .page__description {
-    width: 700px;
-    margin-left: 174px;
     font-size: 17px;
     line-height: 25px;
   }
@@ -73,5 +70,12 @@
 
   .page__description-wrapper {
     margin-top: 126px;
+    margin-bottom: 56px;
+  }
+
+  .page__description {
+    width: 700px;
+    margin-left: 174px;
+    line-height: 28px;
   }
 }

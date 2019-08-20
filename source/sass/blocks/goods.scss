@@ -1,6 +1,7 @@
 .goods {
   @include container;
   padding: 0;
+  margin-bottom: 29px;
 }
 
 .goods__list {
@@ -11,6 +12,7 @@
 
 .goods__item {
   padding: 27px 29px;
+
   &--interior {
     background-color: $highlighted-light;
   }
@@ -33,7 +35,7 @@
 
 @media (min-width: $tablet-width) {
   .goods {
-    margin-bottom: 43px;
+    margin-bottom: 42px;
   }
 
   .goods__list {

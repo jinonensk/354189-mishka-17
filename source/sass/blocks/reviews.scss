@@ -32,9 +32,6 @@
 }
 
 .reviews__slider-button {
-
-// Почему то не могу заставить здесь поинтер работать (!!!) >_<
-
   display: inline-block;
   width: 130px;
   height: 51px;
@@ -45,6 +42,8 @@
   background-repeat: no-repeat;
   background-position: center;
   border: 1px solid black;
+  cursor: pointer;
+
   &--next {
     background-image: url("../img/icon-right-arrow.svg");
   }
@@ -70,7 +69,7 @@
   }
 
   .reviews__title {
-    margin-bottom: 50px;
+    margin-bottom: 49px;
     font-size: 43px;
     line-height: 50px;
   }

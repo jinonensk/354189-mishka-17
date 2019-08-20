@@ -1,22 +1,35 @@
 .main-header {
   width: 100%;
   padding-top: 22px;
+  border-bottom: 1px solid #c6c6c6;
 }
 
 .main-header__container {
   @include container;
-  position: relative;
 }
 
-.main-header__links-wrapper {
+.main-header__delivery-wrapper,
+.main-header__navigation,
+.main-header__user-tools,
+.main-header__offers {
+  display: none;
+}
+
+.main-header__top {
+  margin: auto;
+}
+
+.main-header__nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.main-header__toggle {
   display: none;
 }
 
 .main-header__delivery {
-  position: absolute;
-  bottom: 0;
-  right: 50px;
-  display: none;
   margin: 0;
   padding: 10px 0;
   font-size: 15px;
@@ -24,50 +37,93 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-header__delivery-wrapper {
+    display: block;
+    order: 2;
+    max-height: 0;
+  }
+
+  .main-header__navigation,
+  .main-header__user-tools {
+    display: flex;
+  }
+
   .main-header {
     padding-top: 0;
   }
 
+  .main-header__top {
+    margin: 0;
+    margin-right: auto;
+  }
+
   .main-header__logo {
-    padding-top: 22px;
-    margin: initial;
-    margin-bottom: -71px;
     width: 112px;
+    margin: 0;
+    padding-top: 8px;
   }
 
-  .main-header__links-wrapper {
-    display: block;
-  }
-
-  .main-header__button {
-    display: none;
-  }
-
-  .main-header__nav {
-    display: flex;
-    margin-bottom: -45px;
+  .navigation {
+    order: 1;
+    margin-right: auto;
+    max-height: 0;
   }
 
   .main-header__delivery {
-    display: block;
+    margin-top: 21px;
     padding: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .main-header__offers {
+    display: flex;
+  }
+
   .main-header__logo {
     margin: auto;
-    margin-bottom: -85px;
     margin-top: 8px;
     width: 150px;
     padding-top: 0;
   }
 
-  .main-header__nav {
-    margin-bottom: -85px;
+  .main-header__top {
+    order: 0;
+    flex-shrink: 0;
+    margin: 0 auto;
+    max-width: calc(100% - 160px);
+    outline: 1px dotted blue;
+  }
+
+  .main-header__navigation {
+    flex: none;
+    order: -1;
+    width: calc(50% - 80px);
+  }
+
+  .main-header__user-tools {
+    flex: none;
+    width: calc(50% - 80px);
+  }
+
+  .navigation {
+    outline: 1px dotted hotpink;
+    max-height: initial;
+  }
+
+  .user-tools {
+    outline: 1px dotted hotpink;
+  }
+
+  .main-header__delivery-wrapper {
+    flex: none;
+    width: 50%;
+    text-align: right;
+    max-height: 0;
   }
 
   .main-header__delivery {
-    padding-bottom: 40px;
+    padding: 0;
+    margin-top: 20px;
   }
 }
