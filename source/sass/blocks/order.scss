@@ -157,6 +157,7 @@
 
 .order__footer {
   @include container;
+  padding-top: 3px;
 }
 
 .order__footnote {
@@ -164,11 +165,12 @@
   margin-bottom: 30px;
   color: $secondary-dark;
   font-weight: 400;
-  font-size: 13px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .order__button {
+  background-color: transparent;
   width: 100%;
 }
 
@@ -194,7 +196,7 @@
 
   .order__section {
     display: flex;
-    margin-bottom: 25px;
+    margin-bottom: 29px;
 
     &--colors {
       margin-bottom: 0;
@@ -202,6 +204,7 @@
 
     &--message {
       flex-wrap: wrap;
+      margin-bottom: 22px;
       padding-top: 50px;
     }
   }
@@ -226,7 +229,6 @@
   .order__colors-list .order__label,
   .order__type-list .order__label {
     padding-left: 82px;
-    letter-spacing: 1px;
   }
 
   .order__radio + label::before {
@@ -250,7 +252,7 @@
   .order__colors-item {
     width: 238px;
     padding-top: 16px;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
   }
 
   .order__colors-item:nth-child(odd) {
@@ -264,21 +266,20 @@
 
   .order__user-item {
     display: flex;
-    margin-bottom: 25px;
-  }
-
-  .order__user-item:nth-child(1),
-  .order__user-item:nth-child(2) {
-    margin-bottom: 24px;
+    margin-bottom: 21px;
   }
 
   .order__label {
     align-self: center;
-    margin-right: 33px;
+    margin-right: 28px;
+    font-size: 19px;
+    line-height: 18px;
   }
 
   .order__user-input {
-    padding-left: 18px;
+    padding: 15px 18px;
+    font-size: 19px;
+    line-height: 18px;
 
     &--phone,
     &--email,
@@ -298,7 +299,7 @@
 
   .order__contact-item {
     display: flex;
-    margin-bottom: 25px;
+    margin-bottom: 21px;
   }
 
 
@@ -316,8 +317,8 @@
 
   .order__button {
     flex-shrink: 0;
-    padding: 14px 31px;
     width: initial;
+    padding: 14px 25px;
   }
 }
 
@@ -337,10 +338,10 @@
     &--message {
       margin-bottom: 20px;
     }
-  }
 
-  .order__label {
-    letter-spacing: 1px;
+    &--radio {
+      margin-bottom: 24px;
+    }
   }
 
   .order__title {
@@ -353,12 +354,17 @@
     margin-right: 26px;
   }
 
+  .order__type-item {
+    margin-bottom: 42px;
+  }
+
   .order__colors-item:nth-child(3n) {
     margin-right: 0;
   }
 
   .order__user-input {
     padding-left: 18px;
+    letter-spacing: 0.5px;
 
     &--phone,
     &--email,
@@ -366,9 +372,20 @@
       width: 698px;
       margin-left: auto;
     }
+
+    &--message {
+      padding-left: 14px;
+    }
   }
 
   .order__footer {
+    margin-bottom: 0;
     padding: 0 223px 0 226px;
+  }
+
+  .order__button {
+    padding: 17px 29px;
+    font-size: 17px;
+    line-height: 16px;
   }
 }

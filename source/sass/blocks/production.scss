@@ -3,7 +3,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-bottom: 60px;
+  margin-bottom: 65px;
   line-height: 24px;
 }
 
@@ -25,6 +25,7 @@
   padding-left: 30px;
   padding-right: 40px;
   font-weight: 400;
+  line-height: 24px;
   color: $secondary-dark;
   font-size: 13px;
 }
@@ -32,7 +33,7 @@
 .production__button {
   margin: auto;
   margin-bottom: 30px;
-  padding: 14px 24px;
+  padding: 14px 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -42,19 +43,21 @@
 
   .production__title {
     padding: 15px 25px 0 107px;
-    margin-bottom: 35px;
+    margin-bottom: 32px;
     font-size: 20px;
   }
 
   .production__video {
     order: -1;
+    margin-bottom: 15px;
   }
 
   .production__description {
     width: 583px;
     padding-left: 42px;
-    margin-bottom: 43px;
-    letter-spacing: 1px;
+    margin-bottom: 35px;
+    font-size: 15px;
+    line-height: 30px;
   }
 
   .production__button {
@@ -81,7 +84,7 @@
     padding: 0;
     padding-left: 60px;
     padding-right: 60px;
-    margin-bottom: 37px;
+    margin-bottom: 34px;
     box-sizing: border-box;
   }
 

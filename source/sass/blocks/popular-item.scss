@@ -86,12 +86,13 @@
     flex-direction: column;
     flex-wrap: wrap;
     min-height: 460px;
-    margin-bottom: 74px;
+    margin-bottom: 0;
+    padding-bottom: 74px;
   }
 
   .popular-item__picture {
     position: absolute;
-    bottom: -25px;
+    bottom: 50px;
     right: 50px;
   }
 
@@ -146,7 +147,8 @@
   .popular-item {
     flex-direction: column;
     min-height: 636px;
-    margin-bottom: 100px;
+    padding-bottom: 0;
+    margin-bottom: 73px;
   }
 
   .popular-item__picture {
