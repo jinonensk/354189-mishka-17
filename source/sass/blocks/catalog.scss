@@ -1,20 +1,29 @@
 .catalog {
   @include container;
-
-  // Для сетки
-  box-shadow: inset 0 0 0 1px rgba(255, 0, 0, 0.5);
+  padding-top: 30px;
 }
 
 .catalog__list {
   margin: 0;
+  margin-bottom: 34px;
   padding: 0;
   list-style: none;
 }
 
+@media (min-width: $tablet-width) {
+  .catalog {
+    padding-top: 82px;
+  }
+}
 
 @media (min-width: $desktop-width) {
+  .catalog {
+    padding-top: 130px;
+  }
+
   .catalog__list {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 0;
   }
 }

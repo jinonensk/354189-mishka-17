@@ -1,22 +1,22 @@
 .navigation {
+  // display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
-
-  // Для сетки
-  box-shadow: inset 0 0 0 1px rgba(255, 0, 0, 0.5);
 }
 
 .navigation__item {
-  &--new,
-  &--sale {
-    display: none;
-  }
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid #c6c6c6;
 }
 
 .navigation__link {
-  display: block;
-  padding: 10px;
+  display: inline-block;
+  width: 320px;
+  margin: auto;
+  padding: 27px 47px;
   box-sizing: border-box;
   font-family: inherit;
   font-weight: 700;
@@ -26,26 +26,45 @@
   text-decoration: none;
 }
 
-
 @media (min-width: $tablet-width) {
   .navigation {
-    width: 330px;
-    margin-top: 47px;
-    display: flex;
-    flex-wrap: wrap;
+    margin-right: auto;
+  }
+
+  .navigation__item {
+    display: block;
+    width: initial;
+    border: none;
+  }
+
+  .navigation__link {
+    width: initial;
+    font-size: 15px;
+    display: block;
+    padding: 10px;
+  }
+
+  .navigation__item:nth-child(odd) a {
+    padding: 21px 10px 10px 0;
+  }
+
+  .navigation__item:nth-child(even) a {
+    padding: 21px 10px 10px 26px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .navigation {
-    width: 45%;
-    margin-top: 0;
+  .navigation__link {
+    margin-right: 33px;
+    font-size: 17px;
   }
 
-  .navigation__item {
-    &--new,
-    &--sale {
-      display: block;
-    }
+  .navigation__item:nth-child(odd) a {
+    padding: 31px 35px 32px 0;
+    border-right: 1px solid #c6c6c6;
+  }
+
+  .navigation__item:nth-child(even) a {
+    padding: 31px 35px 32px 0;
   }
 }

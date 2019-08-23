@@ -1,7 +1,10 @@
 .social-list {
   display: flex;
-  // margin: 0;
   padding: 0;
+  justify-content: space-between;
+  width: 145px;
+  margin: auto;
+  margin-bottom: 49px;
 
   list-style: none;
 }
@@ -30,5 +33,30 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social-list {
+    width: auto;
+    margin: 0;
+    margin-left: 158px;
+    flex-wrap: wrap;
+  }
+
+  .social-list__item {
+    margin-right: 35px;
+    padding-top: 8px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social-list {
+    margin-left: 348px;
+    margin-top: 11px;
+  }
+
+  .social-list__item {
+    padding-top: 0;
   }
 }

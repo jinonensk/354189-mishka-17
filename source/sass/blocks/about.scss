@@ -1,15 +1,19 @@
 .about {
   @include container;
+  margin-bottom: 54px;
+  padding-top: 25px;
   font-weight: 700;
   font-size: 17px;
-  line-height: 24px;
+  line-height: 21px;
   color: $primary-dark;
 
   // Для сетки
-  box-shadow: inset 0 0 0 1px rgba(255, 0, 0, 0.5);
+  // box-shadow: inset 0 0 0 1px rgba(255, 0, 0, 0.5);
 }
 
 .about__title {
+  margin: 0;
+  margin-bottom: 32px;
   font-size: 25px;
   line-height: 30px;
 }
@@ -20,79 +24,124 @@
   list-style: none;
 }
 
+.about p {
+  margin: 0;
+  width: 200px;
+}
+
 .about__item {
-  margin-bottom: 30px;
-  padding-top: 50px;
+  margin-bottom: 29px;
+  padding-top: 52px;
 
   &--ecology {
     background-image: url("../img/icon-feature-flower.svg");
     background-repeat: no-repeat;
     background-size: 35px;
-    background-position: left top;
+    background-position: 5px top;
   }
 
   &--price {
     background-image: url("../img/icon-feature-money.svg");
     background-repeat: no-repeat;
-    background-size: 35px;
-    background-position: left top;
+    background-size: 45px;
+    background-position: 5px top;
   }
 
   &--like {
     background-image: url("../img/icon-feature-heart.svg");
     background-repeat: no-repeat;
     background-size: 35px;
-    background-position: left top;
+    background-position: 5px top;
   }
 
   &--love {
     background-image: url("../img/icon-feature-ball.svg");
     background-repeat: no-repeat;
     background-size: 35px;
-    background-position: left top;
+    background-position: 5px top;
   }
 
   &--patriotic {
     background-image: url("../img/icon-feature-rocket.svg");
     background-repeat: no-repeat;
-    background-size: 35px;
-    background-position: left top;
+    background-size: 50px;
+    background-position: 0 top;
   }
 
   &--gift {
     background-image: url("../img/icon-feature-gift.svg");
     background-repeat: no-repeat;
     background-size: 35px;
-    background-position: left top;
+    background-position: 5px top;
   }
 }
 
-.about p {
-  margin: 0;
+.about__item--love p {
+  width: 210px;
 }
 
+.about__item--patriotic p {
+  width: 100%;
+}
+
+.about__item--ecology p {
+  width: 195px;
+}
+
+
 @media (min-width: $tablet-width) {
+  .about {
+    padding-top: 44px;
+    margin-bottom: 26px;
+  }
+
   .about__title {
+    margin-bottom: 50px;
     font-size: 43px;
     line-height: 50px;
   }
 
   .about__list {
+    width: 650px;
     column-count: 2;
   }
 
   .about__item {
+    margin-bottom: 61px;
     break-inside: avoid;
+  }
+
+  .about__item p {
+    width: 250px;
+    font-size: 20px;
+  }
+
+  .about__item--ecology p {
+    width: 230px;
+  }
+
+  .about__item--patriotic p {
+    width: 100%;
+  }
+
+  .about__item--like p {
+    width: 240px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .about {
-    padding: 0 175px;
+    margin-bottom: 30px;
+    padding: 0 225px;
+    padding-top: 83px;
   }
 
   .about__title {
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .about__list {
+    width: 683px;
   }
 }

@@ -1,5 +1,7 @@
 .main-footer {
   width: 100%;
+  padding-top: 26px;
+  padding-bottom: 23px;
   background-color: $secondary-light;
 }
 
@@ -12,17 +14,31 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-footer {
+    padding-top: 52px;
+    padding-bottom: 50px;
+  }
+
   .main-footer__container {
     display: flex;
   }
 
   .main-footer__logo {
     display: block;
+    padding-bottom: 7px;
   }
 
   .main-footer__social-list {
-    margin: auto;
+    padding-top: 5px;
   }
 }
-// @media (min-width: $desktop-width) {
-// }
+
+@media (min-width: $desktop-width) {
+  .main-footer {
+    padding-top: 48px;
+  }
+
+  .main-footer__developers {
+    margin-top: 5px;
+  }
+}

@@ -9,41 +9,45 @@
   <body>
     <header class="main-header">
       <div class="main-header__container">
-        <a class="main-header__logo logo" href="index.html">
-          <picture>
-            <source media="(min-width: 1150px)" srcset="./img/logo-desktop.svg">
-            <source media="(min-width: 770px)" srcset="./img/logo-tablet.svg">
-            <img class="logo__image" src="./img/logo-mobile.svg" width="90" height="40" alt="Логотип">
-          </picture>
-        </a>
-        <div class="main-header__links-wrapper">
-          <button class="main-header__button" type="button"></button>
-          <nav class="main-header__nav">
-            <ul class="navigation">
-              <li class="navigation__item">
-                <a class="navigation__link" href="catalog.html">Каталог товаров</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="form.html">Вязание на заказ</a>
-              </li>
-              <li class="navigation__item navigation__item--new">
-                <a class="navigation__link" href="#">Новые поступления</a>
-              </li>
-              <li class="navigation__item navigation__item--sale">
-                <a class="navigation__link" href="#">Распродажа</a>
-              </li>
-            </ul>
-            <ul class="user-tools">
-              <li class="user-tools__item user-tools__item--search">
-                <a class="user-tools__link" href="#">Поиск по сайту</a>
-              </li>
-              <li class="user-tools__item user-tools__item--basket">
-                <a class="user-tools__link basket" href="#">Корзина: <span class="basket__quontity">пока пуста</span></a>
-              </li>
-            </ul>
-          </nav>
-          <p class="main-header__delivery">Бесплатная доставка по России</p>
-        </div>
+        <nav class="main-header__nav">
+          <div class="main-header__top">
+            <a class="main-header__logo logo" href="index.html">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="./img/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg">
+                <img class="logo__image" src="./img/logo-mobile.svg" width="90" height="40" alt="Логотип">
+              </picture>
+            </a>
+            <button class="main-header__toggle" type="button"></button>
+          </div>
+          <ul class="main-header__navigation navigation">
+            <li class="navigation__item">
+              <a class="navigation__link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="main-header__user-tools user-tools">
+            <li class="user-tools__item user-tools__item--search">
+              <a class="user-tools__link" href="#">Поиск по сайту</a>
+            </li>
+            <li class="user-tools__item user-tools__item--basket">
+              <a class="user-tools__link basket" href="#">Корзина: <span class="basket__quontity">пока пуста</span></a>
+            </li>
+          </ul>
+          <ul class="main-header__offers offers">
+            <li class="offers__item">
+              <a class="offers__link" href="#">Новые поступления</a>
+            </li>
+            <li class="offers__item">
+              <a class="offers__link" href="#">Распродажа</a>
+            </li>
+          </ul>
+          <div class="main-header__delivery-wrapper">
+            <p class="main-header__delivery">Бесплатная доставка по России</p>
+          </div>
+        </nav>
       </div>
     </header>
     <main class="page">
@@ -58,7 +62,7 @@
             <a class="product__image-link" href="#">
               <picture>
                 <source media="(min-width: 1150px)" srcset="./img/photo-hare-desktop@1x.jpg">
-                <source media="(min-width: 770px)" srcset="./img/photo-hare-tablet@1x.jpg">
+                <source media="(min-width: 768px)" srcset="./img/photo-hare-tablet@1x.jpg">
                 <img class="product__image" src="./img/photo-hare-mobile@1x.jpg" alt="Заяц">
               </picture>
             </a>
@@ -67,42 +71,48 @@
                 <h2 class="product__subtitle">Зайчик-попрыгайчик</h2>
               </a>
               <p class="product__description">Рост 30 см, вес 200 г</p>
-              <p class="product__price">1 200 руб.</p>
-              <a class="product__button" href="#" aria-label="Добавить в корзину"></a>
+              <div class="product__price-wrapper">
+                <p class="product__price">1 200 руб.</p>
+                <a class="product__button" href="#" aria-label="Добавить в корзину"></a>
+              </div>
             </div>
           </li>
           <li class="catalog__item product">
             <a class="product__image-link" href="#">
               <picture>
                 <source media="(min-width: 1150px)" srcset="./img/photo-bowl-desktop@1x.jpg">
-                <source media="(min-width: 770px)" srcset="./img/photo-bowl-tablet@1x.jpg">
+                <source media="(min-width: 768px)" srcset="./img/photo-bowl-tablet@1x.jpg">
                 <img class="product__image" src="./img/photo-bowl-mobile@1x.jpg" alt="Козинка для белья">
               </picture>
             </a>
             <div class="product__info-wrapper">
               <a class="product__subtitle-link" href="#">
-                <h2 class="product__subtitle">Козинка для белья</h2>
+                <h2 class="product__subtitle">Корзинка для белья</h2>
               </a>
               <p class="product__description">Диаметр 15 см, высота 10 см</p>
-              <p class="product__price">650 руб.</p>
-              <a class="product__button" href="#" aria-label="Добавить в корзину"></a>
+              <div class="product__price-wrapper">
+                <p class="product__price">650 руб.</p>
+                <a class="product__button" href="#" aria-label="Добавить в корзину"></a>
+              </div>
             </div>
           </li>
           <li class="catalog__item product">
             <a class="product__image-link" href="#">
               <picture>
                 <source media="(min-width: 1150px)" srcset="./img/photo-toys-desktop@1x.jpg">
-                <source media="(min-width: 770px)" srcset="./img/photo-toys-tablet@1x.jpg">
+                <source media="(min-width: 768px)" srcset="./img/photo-toys-tablet@1x.jpg">
                 <img class="product__image" src="./img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек">
               </picture>
             </a>
             <div class="product__info-wrapper">
               <a class="product__subtitle-link" href="#">
-                <h2 class="product__subtitle">Большая козинка для игрушек</h2>
+                <h2 class="product__subtitle">Большая корзинка для игрушек</h2>
               </a>
               <p class="product__description">Диаметр 30 см, высота 30 см</p>
-              <p class="product__price">1 500 руб.</p>
-              <a class="product__button" href="#" aria-label="Добавить в корзину"></a>
+              <div class="product__price-wrapper">
+                <p class="product__price">1 500 руб.</p>
+                <a class="product__button" href="#" aria-label="Добавить в корзину"></a>
+              </div>
             </div>
           </li>
         </ul>
@@ -111,7 +121,7 @@
         <h2 class="production__title">Процесс производства</h2>
         <picture class="production__video">
           <source media="(min-width: 1150px)" srcset="./img/video-desktop@1x.jpg">
-          <source media="(min-width: 770px)" srcset="./img/video-tablet@1x.jpg">
+          <source media="(min-width: 768px)" srcset="./img/video-tablet@1x.jpg">
           <img src="./img/video-mobile@1x.jpg" alt="Производство">
         </picture>
         <!-- <video class="production__video" src=""></video> -->
@@ -138,5 +148,7 @@
         </div>
       </div>
     </footer>
+    <script src="js/menu.js"></script>
+    <script src="js/picturefill.min.js"></script>
   </body>
 </html>

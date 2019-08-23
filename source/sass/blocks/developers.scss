@@ -1,10 +1,32 @@
 .developers {
   display: flex;
+  align-items: center;
 }
 
 .developers__text {
+  margin: 0 auto;
+  margin-right: 26px;
   font-weight: 700;
   font-size: 19px;
   line-height: 20px;
   color: $primary-dark;
+}
+
+.developers__link {
+  display: block;
+  margin-right: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .developers {
+    margin-left: auto;
+  }
+
+  .developers__link {
+    padding-top: 7px;
+  }
+
+  .developers__text {
+    margin-right: 30px;
+  }
 }
