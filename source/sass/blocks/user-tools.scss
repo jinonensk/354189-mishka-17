@@ -19,6 +19,7 @@
 }
 
 .user-tools__link {
+  position: relative;
   display: inline-block;
   width: 320px;
   margin: auto;
@@ -30,6 +31,25 @@
   line-height: 24px;
   color: $primary-dark;
   text-decoration: none;
+
+  svg {
+    position: absolute;
+    left: 0;
+    opacity: 0.2;
+  }
+
+  &:hover {
+    opacity: 0.6;
+
+    svg {
+      opacity: 1;
+      fill: $highlighted-light;
+    }
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -38,6 +58,16 @@
     width: 100%;
     height: 100%;
     padding: 0;
+
+    &--search svg {
+      top: 37px;
+      left: 34px;
+    }
+
+    &--basket svg {
+      left: -7px;
+      top: 4px;
+    }
   }
 
   .user-tools__item {
@@ -60,7 +90,7 @@
     }
   }
 
-  .user-tools__item--search .user-tools__link {
+  .user-tools__link--search {
     font-size: 0;
   }
 }

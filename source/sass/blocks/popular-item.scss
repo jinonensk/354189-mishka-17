@@ -1,7 +1,14 @@
 .popular-item {
+  background-image: url("../../img/bg-zigzag-line.svg");
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.popular-item__container {
   @include container;
   position: relative;
-  margin-bottom: 45px;
+  padding-bottom: 45px;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
@@ -52,7 +59,7 @@
 
 .popular-item__row {
   display: flex;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #c6c6c6;
   padding-bottom: 7px;
   padding-top: 5px;
 }
@@ -81,7 +88,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .popular-item {
+  .popular-item__container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -145,6 +152,10 @@
 
 @media (min-width: $desktop-width) {
   .popular-item {
+    background: none;
+  }
+
+  .popular-item__container {
     flex-direction: column;
     min-height: 636px;
     padding-bottom: 0;
