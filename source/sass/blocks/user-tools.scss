@@ -32,8 +32,13 @@
   color: $primary-dark;
   text-decoration: none;
 
+  p {
+    margin: 0;
+  }
+
   svg {
     position: absolute;
+    top: 28px;
     left: 0;
     opacity: 0.2;
   }
@@ -64,9 +69,13 @@
       left: 34px;
     }
 
-    &--basket svg {
-      left: -7px;
-      top: 4px;
+    &--basket {
+      padding-left: 30px;
+
+      svg {
+        left: 0px;
+        top: 4px;
+      }
     }
   }
 
@@ -84,8 +93,8 @@
 
     &--basket {
       align-self: flex-start;
-      padding: 31px 0 32px 38px;
-      width: 225px;
+      padding: 31px 0 32px 31px;
+      width: 232px;
       text-align: end;
     }
   }

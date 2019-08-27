@@ -179,8 +179,11 @@
 }
 
 .order__contact-item {
-  position: relative;
   margin-bottom: 30px;
+}
+
+.order__input-wrapper {
+  position: relative;
 }
 
 .order__user-input {
@@ -193,6 +196,11 @@
   border: none;
   border-bottom: 2px solid $primary-dark;
   background-color: transparent;
+
+  &--phone,
+  &--email {
+    padding-right: 40px;
+  }
 
   &::-webkit-input-placeholder {
     color: rgba(0, 0, 0, 0.3);
@@ -240,7 +248,7 @@
 
 .order__user-input + svg {
   position: absolute;
-  top: 35px;
+  top: 10px;
   right: 7px;
   opacity: 0.2;
 }
@@ -372,6 +380,7 @@
 
   .order__user-item {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 21px;
   }
 
@@ -388,7 +397,12 @@
     line-height: 18px;
 
     &--phone,
-    &--email,
+    &--email {
+      width: 500px;
+      margin-left: auto;
+      padding-right: 60px;
+    }
+
     &--message {
       width: 500px;
       margin-left: auto;
@@ -410,6 +424,7 @@
 
   .order__contact-item {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 21px;
   }
 
@@ -477,8 +492,15 @@
     padding-left: 18px;
     letter-spacing: 0.5px;
 
+
+
     &--phone,
-    &--email,
+    &--email {
+      width: 698px;
+      margin-left: auto;
+      padding-right: 40px;
+    }
+
     &--message {
       width: 698px;
       margin-left: auto;

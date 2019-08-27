@@ -24,27 +24,33 @@
 .goods__link {
   display: flex;
   width: 100%;
-
   background-repeat: no-repeat;
-  background-size: contain;
 
   &--interior {
     background-color: $highlighted-light;
-    background-image: url("../../img/icon-interior.svg");
-    background-size: 39px;
-    background-position: calc(50% + 102px) calc(100% - 20px);
+
+    p {
+      background-image: url("../img/icon-interior.svg");
+      background-size: 39px;
+      background-position: top 23px right 17px;
+      background-repeat: no-repeat;
+    }
   }
 
   &--kids {
     background-color: $highlighted-dark;
-    background-image: url("../../img/icon-toy.svg");
-    background-size: 62px;
-    background-position: calc(50% + 104px) calc(100% - 20px);
+
+    p {
+      background-image: url("../img/icon-toy.svg");
+      background-size: 62px;
+      background-position: top 20px right 5px;
+      background-repeat: no-repeat;
+    }
   }
 
   &:hover {
     margin-top: -5px;
-    padding-top: 5px;
+    padding-bottom: 5px;
   }
 
   &:active p {
@@ -53,8 +59,8 @@
 }
 
 .goods__link p {
-  width: 260px;
-  padding: 24px 90px 30px 0;
+  width: 280px;
+  padding: 24px 100px 30px 10px;
   margin: 0 auto;
   box-sizing: border-box;
   font-family: inherit;
@@ -96,14 +102,27 @@
     width: 334px;
 
     &--interior {
-      background-position: calc(50% + 111px) calc(100% - 28px);
+      background-position: top 30px right 37px;
+      background-image: url("../img/icon-interior.svg");
+      background-size: 39px;
+
+      p {
+        background: none;
+      }
     }
 
     &--kids {
-      background-position: calc(50% + 104px) calc(100% - 24px);
+      background-position: top 30px right 33px;
+      background-image: url("../img/icon-toy.svg");
+      background-size: 62px;
+
+      p {
+        background: none;
+      }
     }
 
     p {
+      width: 260px;
       padding: 27px 90px 30px 0;
       font-size: 20px;
       line-height: 30px;
@@ -124,11 +143,11 @@
     width: 525px;
 
     &--interior {
-      background-position: calc(100% - 37px) calc(100% - 28px);
+      background-position: top 30px right 37px;;
     }
 
     &--kids {
-      background-position: calc(100% - 33px) calc(100% - 24px);
+      background-position: top 30px right 33px;
     }
   }
 
