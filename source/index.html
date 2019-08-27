@@ -146,7 +146,7 @@
               <button class="reviews__slider-button reviews__slider-button--next" type="button" aria-label="Вперед"></button>
             </li>
           </ul>
-          <a class="reviews__button button" href="#">Написать</a>
+          <a class="reviews__button button" href="reviews.html">Написать</a>
         </div>
       </section>
       <section class="contacts">
@@ -164,7 +164,7 @@
           </table>
         </div>
         <iframe class="contacts__yandex-map" src="https://yandex.ru/map-widget/v1/-/CCG7UUNc" allowfullscreen></iframe>
-        <a class="contacts__button button" href="#">Напишите нам</a>
+        <a class="contacts__button button" href="feedback-form.html">Напишите нам</a>
       </section>
     </main>
     <footer class="main-footer">
@@ -228,6 +228,32 @@
         </div>
       </div>
     </footer>
+    <!-- modal layout -->
+    <div class="size-layout">
+      <section class="size-layout__container">
+        <form class="size-layout__form" method="get" action="https://echo.htmlacademy.ru">
+          <h2 class="size-layout__title">Добавить в корзину</h2>
+          <p class="size-layout__subtitle">Выберите размер:</p>
+          <ul class="size-layout__list">
+            <li class="size-layout__item">
+              <input class="size-layout__radio visually-hidden" type="radio" name="size-group" value="small" id="filter-size-s" checked>
+              <label class="size-layout__label" for="filter-size-s">s</label>
+            </li>
+            <li class="size-layout__item">
+              <input class="size-layout__radio visually-hidden" type="radio" name="size-group" value="medium" id="filter-size-m">
+              <label class="size-layout__label" for="filter-size-m">m</label>
+            </li>
+            <li class="size-layout__item">
+              <input class="size-layout__radio visually-hidden" type="radio" name="size-group" value="large" id="filter-size-l">
+              <label class="size-layout__label " for="filter-size-l">l</label>
+            </li>
+          </ul>
+          <button class="size-layout__button button">Добавить</button>
+        </form>
+      </section>
+    </div>
+    <!--  -->
+    <script src="js/modal-window.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/picturefill.min.js"></script>
   </body>

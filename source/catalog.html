@@ -77,7 +77,7 @@
               </picture>
             </a>
             <div class="product__info-wrapper">
-              <a class="product__subtitle-link" href="#">
+              <a class="product__subtitle-link" href="catalog/hare.html">
                 <h2 class="product__subtitle">Зайчик-попрыгайчик</h2>
               </a>
               <p class="product__description">Рост 30 см, вес 200 г</p>
@@ -100,7 +100,7 @@
               </picture>
             </a>
             <div class="product__info-wrapper">
-              <a class="product__subtitle-link" href="#">
+              <a class="product__subtitle-link" href="catalog/bowl.html">
                 <h2 class="product__subtitle">Корзинка для белья</h2>
               </a>
               <p class="product__description">Диаметр 15 см, высота 10 см</p>
@@ -123,7 +123,7 @@
               </picture>
             </a>
             <div class="product__info-wrapper">
-              <a class="product__subtitle-link" href="#">
+              <a class="product__subtitle-link" href="catalog/toys.html">
                 <h2 class="product__subtitle">Большая корзинка для игрушек</h2>
               </a>
               <p class="product__description">Диаметр 30 см, высота 30 см</p>
@@ -217,6 +217,32 @@
         </div>
       </div>
     </footer>
+    <!-- modal layout -->
+    <div class="size-layout">
+      <section class="size-layout__container">
+        <form class="size-layout__form" method="get" action="https://echo.htmlacademy.ru">
+          <h2 class="size-layout__title">Добавить в корзину</h2>
+          <p class="size-layout__subtitle">Выберите размер:</p>
+          <ul class="size-layout__list">
+            <li class="size-layout__item">
+              <input class="size-layout__radio visually-hidden" type="radio" name="size-group" value="small" id="filter-size-s" checked>
+              <label class="size-layout__label" for="filter-size-s">s</label>
+            </li>
+            <li class="size-layout__item">
+              <input class="size-layout__radio visually-hidden" type="radio" name="size-group" value="medium" id="filter-size-m">
+              <label class="size-layout__label" for="filter-size-m">m</label>
+            </li>
+            <li class="size-layout__item">
+              <input class="size-layout__radio visually-hidden" type="radio" name="size-group" value="large" id="filter-size-l">
+              <label class="size-layout__label " for="filter-size-l">l</label>
+            </li>
+          </ul>
+          <button class="size-layout__button button">Добавить</button>
+        </form>
+      </section>
+    </div>
+    <!--  -->
+    <script src="js/modal-window.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/picturefill.min.js"></script>
   </body>
