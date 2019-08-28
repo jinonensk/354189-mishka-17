@@ -39,7 +39,7 @@
   height: 30px;
   border: none;
   background-color: transparent;
-  background-image: url("../../img/icon-menu-open.svg");
+  background-image: url("../img/icon-menu-open.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 70%;
@@ -47,7 +47,7 @@
 }
 
 .main-header__toggle.menu-opened {
-  background-image: url("../../img/icon-menu-close.svg");
+  background-image: url("../img/icon-menu-close.svg");
 }
 
 .main-header__delivery {

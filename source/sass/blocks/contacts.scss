@@ -28,6 +28,14 @@
   height: 457px;
   margin-bottom: 40px;
   border: none;
+  background-image: url("../img/map-mobile@1x.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/map-mobile@2x.jpg");
+  }
 }
 
 .contacts__button {
@@ -62,21 +70,39 @@
   font-weight: 400;
 }
 
+.contacts__cell--email a {
+  color: inherit;
+  padding-bottom: 5px;
+  border-bottom: 1px solid $highlighted-light;
+
+  &:hover {
+    color: $highlighted-light;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .contacts__cell--adress {
   width: 141px;
 }
 
-
 @media (min-width: $tablet-width) {
   .contacts {
     margin-bottom: 56px;
-    padding-top: 78px;
+    padding-top: 31px;
   }
 
   .contacts__info-wrapper {
     width: 670px;
     margin: auto;
     margin-bottom: 55px;
+    padding-top: 30px;
+    background-image: url("../img/icon-flag.svg");
+    background-repeat: no-repeat;
+    background-size: 60px 82px;
+    background-position: right -2px top 14px;
   }
 
   .contacts__title {
@@ -102,6 +128,11 @@
 
   .contacts__yandex-map {
     margin-bottom: 55px;
+    background-image: url("../img/map-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/map-tablet@2x.jpg");
+    }
   }
 
   .contacts__button {
@@ -114,14 +145,20 @@
     @include container;
     min-height: 457px;
     margin-bottom: 107px;
-    padding-top: 170px;
+    padding-top: 140px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
   }
 
   .contacts__info-wrapper {
     width: 350px;
     margin: 0;
-    margin-left: 170px;
+    margin-left: 50px;
     margin-right: auto;
+    padding-left: 120px;
+    background-position: left 6px top 24px;
   }
 
   .contacts__title {
@@ -135,6 +172,11 @@
     right: 50px;
     width: 527px;
     height: 457px;
+    background-image: url("../img/map-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/map-desktop@2x.jpg");
+    }
   }
 
   .contacts__table {

@@ -5,11 +5,17 @@ $primary-light: #ffffff;
 $secondary-light: #f1f1f1;
 $highlighted-dark: #56c3b2;
 $highlighted-light: #63d1bb;
+$button-color: #444444;
+$strokes: #c6c6c6;
 
-// fonst
+// fonts
 $ff-basic: "Open Sans", "Arial", sans-serif;
 
 // width
 $mobile-width: 320px;
 $tablet-width: 768px;
 $desktop-width: 1150px;
+
+// retina
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

@@ -3,6 +3,14 @@
   width: 90px;
   margin: auto;
   margin-bottom: 18px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
 }
 
 .logo__image {

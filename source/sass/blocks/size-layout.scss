@@ -1,0 +1,143 @@
+.size-layout {
+  position: fixed;
+  top: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+
+  &--show {
+    display: flex;
+  }
+}
+
+.size-layout__container {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  padding: 35px 30px 45px 30px;
+  box-sizing: border-box;
+  background-color: $primary-light;
+  border-top: 1px solid $strokes;
+  border-bottom: 1px solid $strokes;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.size-layout__form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.size-layout__title {
+  width: 150px;
+  margin: 0 auto;
+  margin-bottom: 16px;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.size-layout__subtitle {
+  width: 150px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.size-layout__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 26px;
+  padding: 0;
+  list-style: none;
+}
+
+.size-layout__item {
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.size-layout__label {
+  display: block;
+  width: 83px;
+  height: 53px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  border: 2px solid #f7f7f7;
+  cursor: pointer;
+
+  &:hover {
+    border: 2px solid #e9e9e9;
+  }
+
+  &:active {
+    border: 2px solid $highlighted-light;
+  }
+}
+
+.size-layout__radio {
+  &:checked + label {
+    border: 2px solid $highlighted-light;
+  }
+
+  &:disabled + label {
+    border: 2px solid #e9e9e9;
+    pointer-events: none;
+    opacity: 0.3;
+  }
+}
+
+.size-layout__button {
+  min-width: 260px;
+  align-self: center;
+  margin: auto;
+  font-size: 17px;
+  line-height: 16px;
+  color: $primary-light;
+  background-color: $highlighted-light;
+  border: $highlighted-light;
+  cursor: pointer;
+
+  &:hover {
+    color: $primary-light;
+    background-color: $highlighted-light;
+    opacity: 0.8;
+  }
+
+  &:active {
+    color: $primary-light;
+    background-color: $highlighted-light;
+    opacity: 0.6;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .size-layout__container {
+    width: 556px;
+    margin: auto;
+  }
+
+  .size-layout__title {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 19px;
+    font-size: 30px;
+    line-height: 57px;
+  }
+
+  .size-layout__label {
+    width: 112px;
+  }
+}
