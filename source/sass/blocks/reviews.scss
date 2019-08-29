@@ -44,16 +44,18 @@
   width: 130px;
   height: 51px;
   padding: 0;
+  padding-top: 8px;
   vertical-align: middle;
-  background-image: url("../img/icon-left-arrow.svg");
   background-color: transparent;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: 1px solid black;
+  border: 1px solid $strokes;
   cursor: pointer;
 
-  &--next {
-    background-image: url("../img/icon-right-arrow.svg");
+  &:hover svg {
+    fill: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active svg {
+    fill: rgba(0, 0, 0, 0.3);
   }
 }
 
