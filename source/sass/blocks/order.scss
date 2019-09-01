@@ -251,6 +251,7 @@
   top: 10px;
   right: 7px;
   opacity: 0.2;
+  pointer-events: none;
 }
 
 .order__user-input:hover + svg,
@@ -436,12 +437,13 @@
   .order__footnote {
     width: 100%;
     font-size: 17px;
-    text-align: end;
+    text-align: right;
   }
 
   .order__button {
     flex-shrink: 0;
     width: initial;
+    max-width: 228px;
     padding: 14px 25px;
   }
 }

@@ -1,5 +1,4 @@
 .navigation {
-  // display: flex;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
@@ -36,13 +35,19 @@
 
 @media (min-width: $tablet-width) {
   .navigation {
+    max-width: 325px;
     margin-right: auto;
   }
 
   .navigation__item {
     display: block;
     width: initial;
+    max-width: 150px;
     border: none;
+
+    &:nth-child(even) {
+      max-width: 175px;
+    }
   }
 
   .navigation__link {
@@ -62,8 +67,22 @@
 }
 
 @media (min-width: $desktop-width) {
-  .navigation__link {
+  .navigation {
+    max-width: 441px;
+    min-height: 87px;
+  }
+
+  .navigation__item {
+    max-width: 185px;
     margin-right: 33px;
+
+    &:nth-child(even) {
+      max-width: initial;
+    }
+  }
+
+  .navigation__link {
+    max-width: 185px;
     font-size: 17px;
   }
 
@@ -73,6 +92,6 @@
   }
 
   .navigation__item:nth-child(even) a {
-    padding: 31px 35px 32px 0;
+    padding: 31px 27px 32px 0;
   }
 }
