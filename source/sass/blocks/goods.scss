@@ -89,7 +89,7 @@
     height: 35px;
     background-image: url("../img/bg-zigzag-fill.svg");
     background-size: contain;
-    background-position-x: repeat;
+    background-repeat: repeat-x;
   }
 
   .goods__item {
@@ -145,10 +145,10 @@
   }
 
   .goods::after {
-    bottom: -30px;
-    left: 17px;
-    width: 108%;
-    height: 45px;
+    bottom: -24px;
+    left: -41px;
+    width: 107%;
+    height: 40px;
   }
 
   .goods__link {
