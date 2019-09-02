@@ -14,6 +14,11 @@
   line-height: 20px;
   color: $primary-dark;
 
+  p {
+    margin: 0;
+    padding-top: 4px;
+  }
+
   svg {
     fill: #61d1bb;
   }
@@ -38,8 +43,8 @@
     margin-left: auto;
   }
 
-  .developers__link {
-    padding-top: 7px;
+  .developers__link p {
+    padding-top: 4px;
   }
 
   .developers__text {

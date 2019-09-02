@@ -67,6 +67,9 @@
 @media (min-width: $tablet-width) {
   .reviews {
     padding-bottom: 85px;
+
+    background-size: 100% 16px;
+    background-position: left -21px bottom;
   }
 
   .reviews__container {
@@ -75,8 +78,8 @@
     margin-bottom: 0;
     padding: 77px 50px 20px 50px;
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center left;
+    background-size: 350px 768px;
+    background-position: top left;
     background-image: url("../img/review@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {

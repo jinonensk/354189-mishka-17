@@ -1,7 +1,7 @@
 .main-header {
   width: 100%;
   padding-top: 22px;
-  border-bottom: 1px solid #c6c6c6;
+  border-bottom: 1px solid #ececec;
 }
 
 .main-header__container {
@@ -21,7 +21,7 @@
 .main-header__top {
   position: relative;
   width: 100%;
-  border-bottom: 1px solid #c6c6c6;
+  border-bottom: 1px solid #ececec;
 }
 
 .main-header__nav {
@@ -144,7 +144,8 @@
   .main-header__top {
     order: 0;
     flex-shrink: 0;
-    margin: 0 auto;
+    margin: 0;
+    margin-right: 99px;
     max-width: 150px;
   }
 
@@ -152,6 +153,7 @@
     flex: none;
     order: -1;
     width: calc(50% - 80px);
+    margin-right: 17px;
   }
 
   .main-header__user-tools {

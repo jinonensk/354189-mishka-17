@@ -4,6 +4,7 @@
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
+  min-width: 320px;
   margin-bottom: 26px;
   background-color: #f9f9f9;
 }
@@ -82,12 +83,13 @@
   .goods::after {
     content: "";
     position: absolute;
-    bottom: -12px;
+    bottom: -24px;
     left: 0;
     width: 100%;
-    height: 22px;
+    height: 35px;
     background-image: url("../img/bg-zigzag-fill.svg");
     background-size: contain;
+    background-position-x: repeat;
   }
 
   .goods__item {
@@ -139,11 +141,14 @@
   }
 
   .goods__list {
-    width: 1150px;
+    width: 1050px;
   }
 
-  .goods__list::after {
-    bottom: -5px;
+  .goods::after {
+    bottom: -30px;
+    left: 17px;
+    width: 108%;
+    height: 45px;
   }
 
   .goods__link {

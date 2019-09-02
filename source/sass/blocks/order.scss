@@ -97,6 +97,7 @@
   background-position: center;
 }
 
+.order__radio:focus + label::before,
 .order__radio:hover + label::before {
   border: 2px solid $highlighted-light;
 }
@@ -142,6 +143,7 @@
   background-position: center;
 }
 
+.order__checkbox:focus + label::before,
 .order__checkbox:hover + label::before {
   border: 2px solid $highlighted-light;
 }
@@ -382,7 +384,6 @@
 
   .order__user-item {
     display: flex;
-    flex-wrap: wrap;
     margin-bottom: 21px;
   }
 
@@ -394,7 +395,7 @@
   }
 
   .order__user-input {
-    padding: 15px 18px;
+    padding: 15px 14px;
     font-size: 19px;
     line-height: 18px;
 
@@ -443,7 +444,7 @@
   .order__button {
     flex-shrink: 0;
     width: initial;
-    max-width: 228px;
+    max-width: 230px;
     padding: 14px 25px;
   }
 }
@@ -489,7 +490,6 @@
   }
 
   .order__user-input {
-    padding-left: 18px;
     letter-spacing: 0.5px;
 
     &--phone,
