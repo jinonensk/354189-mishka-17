@@ -77,16 +77,16 @@
 .production__button {
   margin: auto;
   margin-bottom: 30px;
-  padding: 14px 20px;
+  padding: 16px 25px;
 }
 
 @media (min-width: $tablet-width) {
   .production {
-    margin-bottom: 80px;
+    margin-bottom: 64px;
   }
 
   .production__content-wrapper {
-    padding-bottom: 30px;
+    padding-bottom: 46px;
   }
 
   .production__title {
@@ -182,5 +182,6 @@
     width: 228px;
     margin-left: auto;
     margin-right: 60px;
+    margin-bottom: 30px;
   }
 }

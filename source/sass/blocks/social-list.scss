@@ -1,9 +1,8 @@
 .social-list {
   display: flex;
-  padding: 0;
-  margin: auto;
-  margin-left: 57px;
+  margin: 0 auto;
   margin-bottom: 50px;
+  padding: 0;
   list-style: none;
 }
 
@@ -11,10 +10,15 @@
   display: block;
   width: 25px;
   height: 25px;
+
+  &--instagram,
+  &--twitter {
+    padding-top: 6px;
+  }
 }
 
 .social-list__item {
-  margin-right: 35px;
+  margin: 0 17px;
 }
 
 .social-list__link:hover svg {
@@ -28,25 +32,27 @@
 @media (min-width: $tablet-width) {
   .social-list {
     width: auto;
-    margin: 0;
-    margin-left: 158px;
     flex-wrap: wrap;
   }
 
   .social-list__item {
-    margin-right: 35px;
     padding-top: 8px;
+  }
+
+  .social-list__link {
+    &--instagram,
+    &--twitter {
+      padding-top: 6px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .social-list {
-    margin-left: 350px;
-    margin-top: 13px;
+    margin-top: 10px;
   }
 
   .social-list__item {
-    margin-right: 36px;
     padding-top: 0;
   }
 }

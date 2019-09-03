@@ -40,7 +40,8 @@
 
 @media (min-width: $tablet-width) {
   .developers {
-    margin-left: auto;
+    margin: 0;
+    margin-bottom: 43px;
   }
 
   .developers__link p {

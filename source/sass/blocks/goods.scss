@@ -83,12 +83,13 @@
   .goods::after {
     content: "";
     position: absolute;
-    bottom: -24px;
+    bottom: -12px;
     left: 0;
     width: 100%;
-    height: 35px;
+    height: 23px;
+    background-position-x: -4px;
     background-image: url("../img/bg-zigzag-fill.svg");
-    background-size: contain;
+    background-size: auto 100%;
     background-repeat: repeat-x;
   }
 
@@ -145,10 +146,11 @@
   }
 
   .goods::after {
-    bottom: -24px;
-    left: -41px;
-    width: 107%;
-    height: 40px;
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    height: 37px;
+    background-position-x: 11px;
   }
 
   .goods__link {
