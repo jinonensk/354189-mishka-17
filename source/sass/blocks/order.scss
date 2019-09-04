@@ -97,6 +97,7 @@
   background-position: center;
 }
 
+.order__radio:focus + label::before,
 .order__radio:hover + label::before {
   border: 2px solid $highlighted-light;
 }
@@ -142,6 +143,7 @@
   background-position: center;
 }
 
+.order__checkbox:focus + label::before,
 .order__checkbox:hover + label::before {
   border: 2px solid $highlighted-light;
 }
@@ -237,6 +239,7 @@
     padding: 12px 15px 14px 15px;
     line-height: 18px;
     border: 2px solid $primary-dark;
+    resize: vertical;
 
     &:focus,
     &:active,
@@ -251,6 +254,7 @@
   top: 10px;
   right: 7px;
   opacity: 0.2;
+  pointer-events: none;
 }
 
 .order__user-input:hover + svg,
@@ -277,6 +281,7 @@
 .order__button {
   background-color: transparent;
   width: 100%;
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
@@ -380,7 +385,6 @@
 
   .order__user-item {
     display: flex;
-    flex-wrap: wrap;
     margin-bottom: 21px;
   }
 
@@ -392,9 +396,10 @@
   }
 
   .order__user-input {
-    padding: 15px 18px;
+    padding: 15px 14px;
     font-size: 19px;
     line-height: 18px;
+    letter-spacing: 0.5px;
 
     &--phone,
     &--email {
@@ -435,13 +440,14 @@
   .order__footnote {
     width: 100%;
     font-size: 17px;
-    text-align: end;
+    text-align: right;
   }
 
   .order__button {
     flex-shrink: 0;
     width: initial;
-    padding: 14px 25px;
+    max-width: 230px;
+    padding: 16px 30px;
   }
 }
 
@@ -486,7 +492,6 @@
   }
 
   .order__user-input {
-    padding-left: 18px;
     letter-spacing: 0.5px;
 
     &--phone,

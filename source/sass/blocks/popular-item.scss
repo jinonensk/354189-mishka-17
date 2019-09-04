@@ -2,7 +2,8 @@
   background-image: url("../img/bg-zigzag-line.svg");
   background-size: contain;
   background-position: bottom;
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
+  background-position-x: 8px;
 }
 
 .popular-item__container {
@@ -88,6 +89,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .popular-item {
+    background-position-x: 20px;
+    background-size: 100% 17px;
+  }
+
   .popular-item__container {
     display: flex;
     flex-direction: column;

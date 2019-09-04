@@ -2,6 +2,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  min-width: 320px;
   margin-bottom: 39px;
   font-size: 15px;
   line-height: 30px;
@@ -41,7 +42,8 @@
 .contacts__button {
   max-width: 261px;
   margin: auto;
-  padding: 14px 50px;
+  padding: 17px 50px;
+  font-size: 18px;
 }
 
 .contacts__table {
@@ -61,7 +63,7 @@
 .contacts__row {
   display: flex;
   padding-bottom: 0;
-  padding-top: 29px;
+  padding-top: 30px;
 }
 
 .contacts__table th {
@@ -136,20 +138,25 @@
   }
 
   .contacts__button {
-    padding: 14px 34px;
+    padding: 16px 39px;
+    font-size: 17px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts {
-    @include container;
+    width: 1050px;
     min-height: 457px;
+    margin: auto;
     margin-bottom: 107px;
+    padding-left: 0;
+    padding-right: 0;
     padding-top: 140px;
+    box-sizing: border-box;
     background-image: url("../img/bg-zigzag-line.svg");
-    background-size: contain;
-    background-position: top;
-    background-repeat: no-repeat;
+    background-size: 100% 20px;
+    background-position: top 8px left -25px;
+    background-repeat: repeat-x;
   }
 
   .contacts__info-wrapper {
@@ -169,7 +176,7 @@
   .contacts__yandex-map {
     position: absolute;
     top: 100px;
-    right: 50px;
+    right: 0;
     width: 527px;
     height: 457px;
     background-image: url("../img/map-desktop@1x.jpg");

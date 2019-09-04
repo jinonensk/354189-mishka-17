@@ -7,7 +7,7 @@ if (body.classList.contains('nojs')) {
   body.classList.remove('nojs');
 }
 
-toggle.addEventListener('click', function(evt) {
+toggle.addEventListener('click', evt => {
   evt.preventDefault();
   if (toggle.classList.contains('menu-opened')) {
     toggle.classList.remove('menu-opened');

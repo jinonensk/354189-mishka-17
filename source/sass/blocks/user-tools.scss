@@ -1,5 +1,6 @@
 .user-tools {
-  // display: flex;
+  width: 100%;
+  min-width: 320px;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
@@ -9,13 +10,7 @@
 .user-tools__item {
   width: 100%;
   display: flex;
-  border-bottom: 1px solid #c6c6c6;
-}
-
-.user-tools__item:last-child {
-  @media (max-width: $tablet-width) {
-    border: none;
-  }
+  border-bottom: 1px solid #ececec;
 }
 
 .user-tools__link {
@@ -39,7 +34,7 @@
   svg {
     position: absolute;
     top: 28px;
-    left: 0;
+    left: 15px;
     opacity: 0.2;
   }
 
@@ -58,6 +53,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .user-tools {
+    width: initial;
+  }
+
   .user-tools__link {
     display: block;
     width: 100%;
@@ -83,19 +82,19 @@
     width: initial;
     display: block;
     border: none;
-    border-left: 1px solid #c6c6c6;
+    border-left: 1px solid #ececec;
 
     &--search {
       padding: 0;
       width: 85px;
-      height: 85px;
+      height: 87px;
     }
 
     &--basket {
       align-self: flex-start;
       padding: 31px 0 32px 31px;
       width: 232px;
-      text-align: end;
+      text-align: right;
     }
   }
 
@@ -106,6 +105,7 @@
 
 @media (min-width: $desktop-width) {
   .user-tools {
+    max-width: 445px;
     justify-content: flex-end;
   }
 }

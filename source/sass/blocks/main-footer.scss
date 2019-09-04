@@ -1,12 +1,14 @@
 .main-footer {
   width: 100%;
-  padding-top: 26px;
+  padding-top: 23px;
   padding-bottom: 23px;
   background-color: $secondary-light;
 }
 
 .main-footer__container {
   @include container;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-footer__logo {
@@ -24,16 +26,17 @@
 @media (min-width: $tablet-width) {
   .main-footer {
     padding-top: 52px;
-    padding-bottom: 50px;
+    padding-bottom: 0;
   }
 
   .main-footer__container {
-    display: flex;
+    flex-direction: row;
   }
 
   .main-footer__logo {
     display: block;
-    padding-bottom: 7px;
+    margin-right: 80px;
+    padding: 0;
   }
 
   .main-footer__social-list {

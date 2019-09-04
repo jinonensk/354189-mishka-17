@@ -6,9 +6,6 @@
   font-size: 17px;
   line-height: 21px;
   color: $primary-dark;
-
-  // Для сетки
-  // box-shadow: inset 0 0 0 1px rgba(255, 0, 0, 0.5);
 }
 
 .about__title {
@@ -98,6 +95,7 @@
   .about__title {
     margin-bottom: 50px;
     font-size: 43px;
+    letter-spacing: -0.5px;
     line-height: 50px;
   }
 
@@ -131,13 +129,14 @@
 
 @media (min-width: $desktop-width) {
   .about {
+    width: 1050px;
+    margin: auto;
     margin-bottom: 30px;
-    padding: 0 225px;
-    padding-top: 83px;
+    padding: 83px 173px 0;
     background-image: url("../img/bg-zigzag-line.svg");
-    background-size: contain;
-    background-position: top;
-    background-repeat: no-repeat;
+    background-size: 100% 20px;
+    background-position: top 0 left -25px;
+    background-repeat: repeat-x;
   }
 
   .about__title {

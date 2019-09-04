@@ -8,6 +8,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  border: 1px solid #ececec;
 
   &:hover {
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
@@ -37,11 +38,12 @@
 
 .production__video-button {
   position: absolute;
-  top: 50%;
+  top: 47%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100px;
   height: 80px;
+  font-family: $ff-basic;
   background-image: url("../img/icon-play.svg");
   background-color: transparent;
   background-repeat: no-repeat;
@@ -75,16 +77,16 @@
 .production__button {
   margin: auto;
   margin-bottom: 30px;
-  padding: 14px 20px;
+  padding: 16px 25px;
 }
 
 @media (min-width: $tablet-width) {
   .production {
-    margin-bottom: 80px;
+    margin-bottom: 64px;
   }
 
   .production__content-wrapper {
-    padding-bottom: 30px;
+    padding-bottom: 46px;
   }
 
   .production__title {
@@ -101,6 +103,8 @@
   }
 
   .production__video-button {
+    top: 49%;
+
     &:hover {
       width: 120px;
       height: 96px;
@@ -180,5 +184,6 @@
     width: 228px;
     margin-left: auto;
     margin-right: 60px;
+    margin-bottom: 30px;
   }
 }

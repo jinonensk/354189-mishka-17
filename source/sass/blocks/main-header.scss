@@ -1,7 +1,7 @@
 .main-header {
   width: 100%;
   padding-top: 22px;
-  border-bottom: 1px solid #c6c6c6;
+  border-bottom: 1px solid #ececec;
 }
 
 .main-header__container {
@@ -21,7 +21,7 @@
 .main-header__top {
   position: relative;
   width: 100%;
-  border-bottom: 1px solid #c6c6c6;
+  border-bottom: 1px solid #ececec;
 }
 
 .main-header__nav {
@@ -63,20 +63,12 @@
 
 .main-header__navigation.menu-opened,
 .main-header__user-tools.menu-opened {
-  @media (max-width: $tablet-width) {
-    position: inherit;
-    display: flex;
-    opacity: 1;
-  }
+  display: flex;
 }
 
 .nojs .main-header__navigation,
 .nojs .main-header__user-tools {
-  @media (max-width: $tablet-width) {
-    position: inherit;
-    display: flex;
-    opacity: 1;
-  }
+  display: flex;
 }
 
 @media (min-width: $tablet-width) {
@@ -105,6 +97,7 @@
 
   .main-header__top {
     width: initial;
+    max-width: 310px;
     margin: 0;
     margin-right: auto;
     border-bottom: none;
@@ -143,14 +136,17 @@
   .main-header__top {
     order: 0;
     flex-shrink: 0;
-    margin: 0 auto;
-    max-width: calc(100% - 160px);
+    margin: 0;
+    margin-left: 16px;
+    margin-right: auto;
+    max-width: 150px;
   }
 
   .main-header__navigation {
     flex: none;
     order: -1;
     width: calc(50% - 80px);
+    margin-right: 17px;
   }
 
   .main-header__user-tools {
