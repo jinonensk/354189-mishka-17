@@ -13,12 +13,6 @@
   border-bottom: 1px solid #ececec;
 }
 
-.user-tools__item:last-child {
-  @media (max-width: $tablet-width) {
-    border: none;
-  }
-}
-
 .user-tools__link {
   position: relative;
   display: inline-block;

@@ -63,20 +63,12 @@
 
 .main-header__navigation.menu-opened,
 .main-header__user-tools.menu-opened {
-  @media (max-width: $tablet-width) {
-    position: inherit;
-    display: flex;
-    opacity: 1;
-  }
+  display: flex;
 }
 
 .nojs .main-header__navigation,
 .nojs .main-header__user-tools {
-  @media (max-width: $tablet-width) {
-    position: inherit;
-    display: flex;
-    opacity: 1;
-  }
+  display: flex;
 }
 
 @media (min-width: $tablet-width) {
