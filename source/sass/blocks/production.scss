@@ -38,7 +38,7 @@
 
 .production__video-button {
   position: absolute;
-  top: 50%;
+  top: 47%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100px;
@@ -103,6 +103,8 @@
   }
 
   .production__video-button {
+    top: 49%;
+
     &:hover {
       width: 120px;
       height: 96px;

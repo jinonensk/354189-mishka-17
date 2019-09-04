@@ -43,10 +43,13 @@
     content: "";
     position: absolute;
     bottom: -12px;
+    left: 0;
     width: 100%;
-    height: 22px;
+    height: 23px;
     background-image: url("../img/bg-zigzag-fill.svg");
-    background-size: contain;
+    background-position-x: -4px;
+    background-size: auto 100%;
+    background-repeat: repeat-x;
   }
 
   .page__title-container {
@@ -75,6 +78,14 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page__title-wrapper::after {
+    bottom: -16px;
+    left: 0;
+    width: 100%;
+    height: 34px;
+    background-position-x: -2px;
+  }
+
   .page__title-container {
     padding-top: 65px;
   }
