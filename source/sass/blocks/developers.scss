@@ -5,7 +5,6 @@
 
 .developers__link {
   display: flex;
-  align-items: end;
   justify-content: space-between;
   margin: auto;
   width: 186px;
@@ -44,11 +43,23 @@
     margin-bottom: 43px;
   }
 
-  .developers__link p {
-    padding-top: 4px;
+  .developers__link {
+    margin: 0;
+    margin-bottom: auto;
+    margin-top: 8px;
+
+    & p {
+      padding-top: 4px;
+    }
   }
 
   .developers__text {
     margin-right: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .developers__link {
+    margin-top: 2px;
   }
 }

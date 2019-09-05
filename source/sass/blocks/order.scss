@@ -192,6 +192,7 @@
   width: 100%;
   padding: 12px 0 14px 0;
   box-sizing: border-box;
+  font-family: $ff-basic;
   font-size: 17px;
   color: $primary-dark;
   line-height: 24px;
@@ -396,10 +397,9 @@
   }
 
   .order__user-input {
-    padding: 15px 14px;
+    padding: 13px 14px;
     font-size: 19px;
     line-height: 18px;
-    letter-spacing: 0.5px;
 
     &--phone,
     &--email {
@@ -492,8 +492,6 @@
   }
 
   .order__user-input {
-    letter-spacing: 0.5px;
-
     &--phone,
     &--email {
       width: 698px;

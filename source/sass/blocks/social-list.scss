@@ -1,5 +1,7 @@
 .social-list {
   display: flex;
+  flex-wrap: wrap;
+  max-width: 236px;
   margin: 0 auto;
   margin-bottom: 50px;
   padding: 0;
@@ -32,7 +34,7 @@
 @media (min-width: $tablet-width) {
   .social-list {
     width: auto;
-    flex-wrap: wrap;
+    max-width: initial;
   }
 
   .social-list__item {

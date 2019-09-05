@@ -95,15 +95,6 @@
 
   .goods__item {
     width: 50%;
-    margin: auto;
-
-    &:nth-child(odd) {
-      margin-right: 0;
-    }
-
-    &:nth-child(even) {
-      margin-left: 0;
-    }
   }
 
   .goods__link {

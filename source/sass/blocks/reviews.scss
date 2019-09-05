@@ -80,7 +80,7 @@
     margin-bottom: 0;
     padding: 77px 50px 20px 50px;
     background-repeat: no-repeat;
-    background-size: 350px 768px;
+    background-size: 350px auto;
     background-position: top left;
     background-image: url("../img/review@1x.jpg");
 
@@ -137,7 +137,7 @@
     flex-wrap: wrap;
     margin-bottom: 60px;
     padding: 72px 50px 67px 225px;
-    background-position: 50px center;
+    background-position: 50px top;
   }
 
   .reviews__title {
