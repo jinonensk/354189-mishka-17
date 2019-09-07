@@ -1,4 +1,6 @@
 .popular-item {
+  width: 320px;
+  margin: 0 auto;
   background-image: url("../img/bg-zigzag-line.svg");
   background-size: contain;
   background-position: bottom;
@@ -90,6 +92,7 @@
 
 @media (min-width: $tablet-width) {
   .popular-item {
+    width: 768px;
     background-position-x: 20px;
     background-size: 100% 17px;
   }
@@ -158,6 +161,7 @@
 
 @media (min-width: $desktop-width) {
   .popular-item {
+    width: 100%;
     background: none;
   }
 
