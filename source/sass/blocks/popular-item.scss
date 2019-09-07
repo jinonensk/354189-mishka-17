@@ -1,11 +1,8 @@
 .popular-item {
-  width: 320px;
-  margin: 0 auto;
   background-image: url("../img/bg-zigzag-line.svg");
-  background-size: contain;
-  background-position: bottom;
-  background-repeat: repeat-x;
-  background-position-x: 8px;
+  background-size: 260px 5px;
+  background-position: bottom 2px center;
+  background-repeat: no-repeat;
 }
 
 .popular-item__container {
@@ -92,9 +89,7 @@
 
 @media (min-width: $tablet-width) {
   .popular-item {
-    width: 768px;
-    background-position-x: 20px;
-    background-size: 100% 17px;
+    background-size: 668px 16px;
   }
 
   .popular-item__container {
@@ -103,7 +98,7 @@
     flex-wrap: wrap;
     min-height: 460px;
     margin-bottom: 0;
-    padding-bottom: 74px;
+    padding-bottom: 70px;
   }
 
   .popular-item__picture {
